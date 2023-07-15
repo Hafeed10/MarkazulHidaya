@@ -5,6 +5,7 @@
 
 #root {
   font-family: fontName;
+  position: relative;
 }
 p{
   color: #555555;
