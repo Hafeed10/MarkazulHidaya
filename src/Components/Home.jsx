@@ -4,7 +4,7 @@ import Header from '../assets/Header'
 
 function Home() {
   return (
-    <div style={{backgroundImage: `url(${homebg})`}} className='relative w-full h-screen bg-top bg-no-repeat '>
+    <div id='Home' style={{backgroundImage: `url(${homebg})`}} className='relative w-full px-3 md:px-10 lg:px-10 xl:px-36 h-screen bg-top bg-no-repeat '>
         <Header/>
     </div>
   )
