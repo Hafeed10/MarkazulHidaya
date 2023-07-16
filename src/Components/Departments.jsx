@@ -1,7 +1,11 @@
-// import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react';
 import bgAcademic from '../assets/Img/bgPattern.jpg';
 import DepartImg from '../assets/Img/DepartImg.png';
+import { DepartData } from '../Data/DepartData';
+
+
+// import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -67,6 +71,4 @@ function Departments() {
 export default Departments
 
 
-import React from 'react';
-import { DepartData } from '../Data/DepartData';
 
