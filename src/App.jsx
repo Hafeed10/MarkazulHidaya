@@ -8,6 +8,8 @@ import Events from './Components/Events'
 import CentralLibrary from './Components/CentralLibrary'
 import MessageDir from './Components/MessageDir'
 import Faculties from './Components/Faculties'
+import Departemnts from './Components/Departments'
+import Footer from './assets/Footer'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
       <CentralLibrary/>
       <MessageDir/>
       <Faculties/>
+      <Departemnts/>
+      <Footer/>
     </>
   )
 }
