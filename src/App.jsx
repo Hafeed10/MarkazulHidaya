@@ -6,6 +6,7 @@ import About from './Components/About'
 import Status from './Components/Status'
 import Events from './Components/Events'
 import CentralLibrary from './Components/CentralLibrary'
+import MessageDir from './Components/MessageDir'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Status/>
       <Events/>
       <CentralLibrary/>
+      <MessageDir/>
     </>
   )
 }

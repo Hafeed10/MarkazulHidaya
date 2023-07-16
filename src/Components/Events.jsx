@@ -1,7 +1,5 @@
 import React from 'react';
 import bgAcademic from '../assets/Img/bgPattern.jpg';
-import EventUp from '../assets/Img/eventimg.jpg';
-import Event from '../assets/Img/eventimgtwo.jpg';
 import { EventData, EventUpData } from '../Data/Eventdata';
 
 function Events() {
