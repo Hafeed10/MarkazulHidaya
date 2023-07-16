@@ -9,7 +9,7 @@ function MessageDir() {
         <h2 className='z-10 text-3xl md:text-4xl lg:text-5xl'>Meassage from the Director</h2>
         <div className='flex z-10 flex-col-reverse md:flex-row items-center justify-center md:justify-end w-full h-full'>
             <img src={DirectorImg} className=' h-full w-full md:w-1/2 ' alt="" />
-            <div className='flex h-full w-full  md:w-1/2 flex-col text-[#555555] items-center text-center md:text-start md:items-start font-sans space-y-6 '>
+            <div className='flex h-full md:py-5 w-full  md:w-1/2 flex-col text-[#555555] items-center text-center md:text-start md:items-start font-sans space-y-6 '>
                 <p className='text-base lg:text-xl w-full '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. versions of Lorem Ipsum.</p>
                 <div>
                     <h2 className='text-base sm:text-lg text-[#555555] lg:text-xl font-medium xl:text-2xl'>Dr Abduslam Ahmed</h2>
