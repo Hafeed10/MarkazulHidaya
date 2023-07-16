@@ -5,6 +5,7 @@ import Academics from './Components/Academics'
 import About from './Components/About'
 import Status from './Components/Status'
 import Events from './Components/Events'
+import CentralLibrary from './Components/CentralLibrary'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Academics/>
       <Status/>
       <Events/>
+      <CentralLibrary/>
     </>
   )
 }
