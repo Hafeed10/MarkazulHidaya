@@ -2,7 +2,7 @@ import React from 'react'
 import { useCountUp } from 'react-countup';
 import groupone from '../assets/Img/Groupone.svg'
 import grouptwo from '../assets/Img/Grouptwo.svg'
-import groupthree from '../assets/Img/groupthree.svg'
+import groupthree from '../assets/Img/Groupthree.svg'
 
 function Status() {
   useCountUp({ ref: '1', end: 22, duration: 10 });
