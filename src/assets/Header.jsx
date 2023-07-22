@@ -14,12 +14,12 @@ function Header() {
     { option: 'About Us', path: '/AboutUs' },
     { option: 'Admission', path: '/Admission' },
     { option: 'Examination', path: '/Examination' },
-    { option: 'Event', path: '/Event' },
+    { option: 'Event', path: '/Events' },
     { option: 'Contact', path: '/Contact' },
   ];
 
   const Navfix = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 50) {
       setFix(true);
     } else {
       setFix(false);
