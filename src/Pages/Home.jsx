@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import homebg from '../assets/Img/homebg.png'
-import Header from '../assets/Header'
+import HomeOne from '../Components/Home/HomeOne';
+import HomeTwo from '../Components/Home/HomeTwo';
+import HomeThree from '../Components/Home/HomeThree';
+import HomeFour from '../Components/Home/HomeFour';
+import HomeFive from '../Components/Home/HomeFive';
+import HomeSix from '../Components/Home/HomeSix';
+import HomeSeven from '../Components/Home/HomeSeven';
+import HomeEight from '../Components/Home/HomeEight';
 
 function Home() {
     const [activeTab, setActiveTab] = useState('Certificate');
@@ -35,11 +42,11 @@ function Home() {
   }, [activeTab, Tabs]);
 
   return (
+    <div className='h-full w-full'>
     <div id='Home' style={{backgroundImage: `url(${homebg})`}} className='relative w-full px-3 md:px-10 lg:px-10 xl:px-36 space-y-5 py-16 lg:py-20 xl:py-24 h-screen bg-top bg-no-repeat flex flex-col items-center  justify-end'>
-        <Header/>
         <div className="w-full  h-auto space-y-5 flex flex-col text-center md:text-start items-center md:items-start justify-center">
-          <div className="h-auto px-8 w-full">
-             <ul className="w-full flex items-center justify-start space-x-4 md:space-x-5" role="tablist">
+          <div className="h-auto w-full">
+             <ul className="w-full flex items-center justify-start space-x-3 md:space-x-4" role="tablist">
                {Tabs.map((tab) => (
                  <li
                    key={tab.tabKey}
@@ -59,6 +66,15 @@ function Home() {
             {activeTab === '4' && <h2 className='text-white'> Lorem  sit amet ipsum amet dolor sit amet. 4</h2>}
           </div>
         </div>
+    </div>
+       <HomeOne/>
+      <HomeTwo/>
+      <HomeThree/>
+      <HomeFour/>
+      <HomeFive/>
+      <HomeSix/>
+      <HomeSeven/>
+      <HomeEight/>
     </div>
   )
 }

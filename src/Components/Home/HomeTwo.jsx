@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import bgAcademic from '../assets/Img/bgPattern.jpg';
-import CourseCard from '../assets/CourseCard';
-import { CertificateData, DiplomaData, ShortTermData } from '../Data/CourseData';
+import bgAcademic from '../../assets/Img/bgPattern.jpg';
+import CourseCard from '../../assets/CourseCard';
+import { CertificateData, DiplomaData, ShortTermData } from '../../Data/CourseData';
 
-function Academics() {
+function HomeTwo() {
   const [activeTab, setActiveTab] = useState('Certificate');
 
   const Tabs = [
@@ -77,4 +77,4 @@ function Academics() {
   );
 }
 
-export default Academics;
+export default HomeTwo;

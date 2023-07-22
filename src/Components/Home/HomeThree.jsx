@@ -1,10 +1,10 @@
 import React from 'react'
 import { useCountUp } from 'react-countup';
-import groupone from '../assets/Img/Groupone.svg'
-import grouptwo from '../assets/Img/Grouptwo.svg'
-import groupthree from '../assets/Img/Groupthree.svg'
+import groupone from '../../assets/Img/Groupone.svg'
+import grouptwo from '../../assets/Img/Grouptwo.svg'
+import groupthree from '../../assets/Img/Groupthree.svg'
 
-function Status() {
+function HomeThree() {
   useCountUp({ ref: '1', end: 22, duration: 10 });
 	useCountUp({ ref: '2', end: 22, duration: 10 });
 	useCountUp({ ref: '3', end: 22, duration: 10 });
@@ -47,7 +47,7 @@ function Status() {
   )
 }
 
-export default Status
+export default HomeThree
 
 
 

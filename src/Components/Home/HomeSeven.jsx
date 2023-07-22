@@ -1,8 +1,8 @@
 import React from 'react'
-import icon1 from '../assets/Img/icon1.svg'
+import icon1 from '../../assets/Img/icon1.svg'
 
 
-function Faculties() {
+function HomeSeven() {
   return (
     <div className='w-full h-auto  px-3 md:px-10 lg:px-10 xl:px-36 py-10 md:py-16 lg:py-20 xl:py-28 bg-white'> 
     <div className='flex flex-col items-center md:items-start text-center md:text-start space-y-5 lg:space-y-7 xl:space-y-9 w-full h-full'>
@@ -17,4 +17,4 @@ function Faculties() {
   )
 }
 
-export default Faculties
+export default HomeSeven

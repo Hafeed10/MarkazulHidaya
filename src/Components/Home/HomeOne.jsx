@@ -1,8 +1,8 @@
 import React from 'react'
-import icon1 from '../assets/Img/icon1.svg'
-import groundone from '../assets/Img/groundone.png'
+import icon1 from '../../assets/Img/icon1.svg'
+import groundone from '../../assets/Img/groundone.png'
 
-function About() {
+function HomeOne() {
   return (
     <div className='relative w-full h-auto flex flex-col -z-50 py-12 md:p-16 lg:py-20 xl:py-32 pb-20 md:pb-40 lg:pb-64 xl:pb-80  px-3 md:px-10 lg:px-10 xl:px-36 space-y-7 lg:space-y-10 xl:space-y-12 items-center justify-center text-center'>
         <h1 class="text-[#619A46] text-3xl md:text-4xl lg:text-[3rem] xl:text-[3.5rem]">Welcome to Al Jamia al Islamia </h1>
@@ -16,4 +16,4 @@ function About() {
   )
 }
 
-export default About
+export default HomeOne

@@ -1,7 +1,7 @@
 import React from 'react'
-import groundtwo from '../assets/Img/groundtwo.jpg'
+import groundtwo from '../../assets/Img/groundtwo.jpg'
 
-function CentralLibrary() {
+function HomeFive() {
   return (
     <div className='w-full h-auto'>
         <img src={groundtwo} className='w-full h-52 object-cover md:h-auto' alt="" />
@@ -18,4 +18,4 @@ function CentralLibrary() {
   )
 }
 
-export default CentralLibrary
+export default HomeFive

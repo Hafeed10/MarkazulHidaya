@@ -1,8 +1,8 @@
 import React from 'react'
-import bgAcademic from '../assets/Img/bgPattern.jpg';
-import DirectorImg from '../assets/Img/Director.png';
+import bgAcademic from '../../assets/Img/bgPattern.jpg';
+import DirectorImg from '../../assets/Img/Director.png';
 
-function MessageDir() {
+function HomeSix() {
   return (
     <div style={{ backgroundImage: `url(${bgAcademic})` }} className='relative w-full h-auto bg-no-repeat px-3 flex flex-col items-center space-y-12 md:space-y-16 lg:space-y-20 md:px-10 lg:px-10 xl:px-36 pt-10 md:pt-16 '>
         <div className='w-full h-full bg-[#619A46]  opacity-10 absolute top-0 left-0 '></div>
@@ -21,4 +21,4 @@ function MessageDir() {
   )
 }
 
-export default MessageDir
+export default HomeSix

@@ -1,8 +1,8 @@
 import React from 'react';
-import bgAcademic from '../assets/Img/bgPattern.jpg';
-import { EventData, EventUpData } from '../Data/Eventdata';
+import bgAcademic from '../../assets/Img/bgPattern.jpg';
+import { EventData, EventUpData } from '../../Data/Eventdata';
 
-function Events() {
+function HomeFour() {
   return (
     <div
       id='Events'
@@ -67,4 +67,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default HomeFour;

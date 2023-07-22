@@ -1,7 +1,6 @@
 import React from 'react';
-import bgAcademic from '../assets/Img/bgPattern.jpg';
-import DepartImg from '../assets/Img/DepartImg.png';
-import { DepartData } from '../Data/DepartData';
+import bgAcademic from '../../assets/Img/bgPattern.jpg';
+import { DepartData } from '../../Data/DepartData';
 
 
 // import React from 'react'
@@ -16,7 +15,7 @@ import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-function Departments() {
+function HomeEight() {
   return (
     <div style={{ backgroundImage: `url(${bgAcademic})` }} className='w-full h-full text-center bg-no-repeat px-3 md:px-10 lg:px-10 xl:px-36 space-y-10 py-10 md:py-16 lg:py-20 xl:py-24'>
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>Departments</h2>
@@ -68,7 +67,7 @@ function Departments() {
   )
 }
 
-export default Departments
+export default HomeEight
 
 
 
