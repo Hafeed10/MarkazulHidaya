@@ -13,7 +13,7 @@ function Header() {
     { option: 'Home', path: '/' },
     { option: 'About Us', path: '/AboutUs' },
     { option: 'Admission', path: '/Admission' },
-    { option: 'Examination', path: '/Examination' },
+    { option: 'Faculties', path: '/Faculties' },
     { option: 'Event', path: '/Events' },
     { option: 'Contact', path: '/Contact' },
   ];
@@ -30,9 +30,9 @@ function Header() {
 
 
   return (
-    <div className={`w-full h-auto ${ location.pathname === '/' ? 'fixed left-0 top-0' : ''}  px-3 md:px-10 lg:px-10 xl:px-36 py-2 z-50 ${fix ? 'bg-[#ffffff] shadow-lg drop-shadow-md shadow-[#cca55d34] py-4' : 'md:py-8  lg:py-10'}`}>
+    <div className={`w-full h-auto ${ location.pathname === '/' ? 'fixed left-0 top-0' : ''}  px-3 md:px-10 lg:px-10 xl:px-36 py-2 z-50 ${fix &&  location.pathname === '/' ? 'bg-[#ffffff] shadow-lg drop-shadow-md shadow-[#cca55d34] py-4' : 'md:py-8  lg:py-10'}`}>
       <div className="flex items-center justify-between   w-full h-full">
-        <img className={` ${fix ? 'w-44 md:w-52 xl:w-72' : 'w-52 md:w-72 xl:w-80 '} `} src={logo} alt="" />
+        <img className={` ${fix  &&  location.pathname === '/' ? 'w-44 md:w-52 xl:w-72' : 'w-52 md:w-72 xl:w-80 '} `} src={logo} alt="" />
         <ul className="xl:flex hidden space-x-7">
           {navigations.map((navigation, index) => (
             <li

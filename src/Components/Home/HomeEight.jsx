@@ -17,7 +17,8 @@ import { Pagination } from 'swiper/modules';
 
 function HomeEight() {
   return (
-    <div style={{ backgroundImage: `url(${bgAcademic})` }} className='w-full h-full text-center bg-no-repeat px-3 md:px-10 lg:px-10 xl:px-36 space-y-10 py-10 md:py-16 lg:py-20 xl:py-24'>
+    <div style={{ backgroundImage: `url(${bgAcademic})` }} className='relative w-full h-full px-3 py-10 space-y-10 text-center bg-no-repeat md:px-10 lg:px-10 xl:px-36 md:py-16 lg:py-20 xl:py-24'>
+        <div className='w-full h-full bg-[#619A46]  opacity-5 absolute top-0 left-0 '></div>
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>Departments</h2>
         <p className='font-sans text-base md:text-lg lg:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. versions of Lorem Ipsum.</p>
         <Swiper
@@ -49,12 +50,12 @@ function HomeEight() {
              },
            }}
            modules={[Pagination]}
-             className="h-auto pt-5 pb-16 px-2 overflow-y-visible w-full"
+             className="w-full h-auto px-2 pt-5 pb-16 overflow-y-visible"
            >
             {DepartData.map((dep)=>(
-             <SwiperSlide className=" hover:shadow-xl transition-all  drop-shadow-lg bg-white rounded-3xl">
-                <img src={dep.img} className='h-1/2 w-full object-cover' alt="" />
-                <div className='w-full flex flex-col text-center space-y-4 items-center justify-center p-3 h-1/2'>
+             <SwiperSlide className="transition-all bg-white  hover:shadow-xl drop-shadow-lg rounded-3xl">
+                <img src={dep.img} className='object-cover w-full h-1/2' alt="" />
+                <div className='flex flex-col items-center justify-center w-full p-3 space-y-4 text-center h-1/2'>
                   <h2 className='text-[#CEA553] text-2xl leading-7'>{dep.title}</h2>
                   <a href={dep.buttonTo}  className='rounded-md lg:rounded-lg cursor-pointer w-auto bg-[#555555] text-[#555555] bg-opacity-10 pt-0.5 px-4 xl:px-6 pb-1 text-xs xl:text-sm font-sans'>
                      Learn More

@@ -6,6 +6,9 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Events from './Pages/Events';
+import Faculties from './Pages/Faculties';
+import FacultiCard from './Components/Faculties/FacultiCard';
+import Admission from './Pages/Admission';
 
 function App() {
   return (
@@ -15,7 +18,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutUs" element={<About/>} />
+          <Route path="/Faculties" element={<Faculties/>} >
+            <Route path=':id' element={<FacultiCard/>}/>
+          </Route>
           <Route path="/Events" element={<Events/>} />
+          <Route path="/Admission" element={<Admission/>} />
         </Routes>
         <Footer />
       </Router>
