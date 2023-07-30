@@ -36,7 +36,7 @@ function Home() {
       const currentIndex = Tabs.findIndex((tab) => tab.tabKey === activeTab);
       const nextIndex = (currentIndex + 1) % Tabs.length;
       setActiveTab(Tabs[nextIndex].tabKey);
-    }, 3500 );
+    }, 2500 );
 
     return () => clearInterval(timer);
   }, [activeTab, Tabs]);

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './Img/logo.png';
 import { Link } from 'react-scroll';
+import { Link as Tolink } from 'react-router-dom';
 import { CgFacebook, CgInstagram, CgMail, CgPhone, CgTwitter } from 'react-icons/cg';
 
 const Footer = () => {
@@ -17,7 +18,9 @@ const Footer = () => {
     <footer className="bg-[#2C2C2C] text-white px-3 md:px-10 lg:px-10 xl:px-36 py-7 md:py-16">
       <div className="grid gap-5 md:gap-10 lg:gap-32 opacity-90 font-sans items-end md:grid-cols-3">
         <div className="space-y-5 py-5">
-          <img src={logo} className="w-80" alt="" />
+        <Tolink to='/'>
+        <img onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='cursor-pointer w-80' src={logo} alt="" />
+        </Tolink>
           <p className="text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab sequi iusto! Numquam, saepe ipsam iste
             mollitia odit exercitationem molestiae labore voluptates culpa unde placeat quisquam. Doloribus laboriosam
