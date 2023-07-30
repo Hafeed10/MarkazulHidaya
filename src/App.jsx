@@ -9,6 +9,7 @@ import Events from './Pages/Events';
 import Faculties from './Pages/Faculties';
 import FacultiCard from './Components/Faculties/FacultiCard';
 import Admission from './Pages/Admission';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           </Route>
           <Route path="/Events" element={<Events/>} />
           <Route path="/Admission" element={<Admission/>} />
+          <Route path="/Contacts" element={<Contact/>} />
         </Routes>
         <Footer />
       </Router>

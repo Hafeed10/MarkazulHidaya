@@ -15,7 +15,7 @@ function Header() {
     { option: 'Admission', path: '/Admission' },
     { option: 'Faculties', path: '/Faculties' },
     { option: 'Event', path: '/Events' },
-    { option: 'Contact', path: '/Contact' },
+    { option: 'Contact', path: '/Contacts' },
   ];
 
   const Navfix = () => {

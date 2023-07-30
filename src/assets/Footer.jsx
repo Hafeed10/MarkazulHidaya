@@ -3,6 +3,7 @@ import logo from './Img/logo.png';
 import { Link } from 'react-scroll';
 import { Link as Tolink } from 'react-router-dom';
 import { CgFacebook, CgInstagram, CgMail, CgPhone, CgTwitter } from 'react-icons/cg';
+import { FiMapPin } from 'react-icons/fi';
 
 const Footer = () => {
   const navigations = [
@@ -65,7 +66,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center tracking-wider space-x-2.5">
               <span className="text-2xl">
-                <CgMail />
+                <FiMapPin />
               </span>{' '}
               <span>
                 SANTHAPURAM . P.O. PATTIKKAD <br /> 679325, MALAPPURA, KERALA
