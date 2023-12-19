@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImg from '../assets/Img/groundtwo.jpg'
+import AboutImg from '../assets/Img/hafe.jpg'
 import VisionImg from '../assets/Img/groundtwo.jpg'
 import MissionImg from '../assets/Img/groundtwo.jpg'
 import PatternBg from '../assets/Img/bgPattern.jpg'
@@ -13,7 +13,7 @@ function About() {
     <div className='w-full h-full'>
       <div className='flex flex-col items-center justify-center h-full space-y-7 lg:space-y-12 bg-white py-12 md:py-16 lg:py-22 w-ful'>
         <h2 className='text-[#619A46] text-4xl md:text-5xl lg:text-[3.5rem]'>About us</h2>
-        <img src={AboutImg} className='object-cover w-full h-72 md:h-auto 'alt="" />
+        <img src={AboutImg} className='object-cover w-full h-48 md:h-auto 'alt="" />
         <p className='px-3 md:px-10 lg:px-10 xl:px-36 mt-4 font-sans text-center text-[#555555] text-base md:text-xl  lg:text-2xl font-normal leading-snug tracking-wide'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uns of Lorem Ipsum.Lorem Ipsum is simply dummy text of en the industry's standard dumm the 1500s, when an unknown printer took a galley of type and scrambled it to make a type splly unchanged. versions of Lorem Ipsum.</p>
       </div>
 

@@ -33,7 +33,7 @@ function Faculties() {
 
       <div style={{ backgroundImage: `url(${PatternBg})` }} className='relative flex flex-col items-center justify-center w-full h-full px-3 py-16 md:py-20 lg:py-24 bg-no-repeat gap-10 lG:gap-16  xl:gap-20 md:px-10 lg:px-10 xl:px-36'>
         <div className='w-full h-full bg-[#619A46] opacity-5 absolute top-0 left-0'></div>
-        <h1 className='text-[#CCA65D] text-3xl md:text-4xl lg:text-5xl'>Our Leadership</h1>
+        <h1 className='text-[#ffb134] text-3xl md:text-4xl lg:text-5xl'>Our Leadership</h1>
         <div className='z-10 grid w-full h-full grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 grid-rows-auto'>
           {Leadershipdata.map((item) => (
             <div className='w-full h-full' key={item.id} onClick={() => showEventModal(item.id , item.name)}>
@@ -44,7 +44,7 @@ function Faculties() {
       </div>
 
       <div className='w-full h-full flex flex-col px-3 gap-10 lg:gap-20 text-center md:px-10 lg:px-10 xl:px-36 py-16 md:py-20 lg:py-24'>
-        <h1 className='text-[#CCA65D] text-3xl md:text-4xl lg:text-5xl'>Sharia Faculties</h1>
+        <h1 className='text-[#ffb134] text-3xl md:text-4xl lg:text-5xl'>Hidaya Faculties</h1>
         <div className='grid w-full h-full md:grid-cols-3 gap-5 lg:gap-10 grid-rows-auto'>
           {ShariaFacultiesdata.map((item) => (
             <FacultiCard key={item.id} item={item} />

@@ -10,28 +10,28 @@ function Contact() {
                 <div className='flex  w-full h-full flex-col items-start justify-start gap-y-5'>
                     <p className='text-lg md:text-xl '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit voluptatum obcaecati exercitationem, vel laudantium ratione eos a cum aut aliquid?</p>
                     <div className='flex items-start w-full h-auto gap-2 md:gap-5 lg:mt-10'>
-                        <div className='bg-[#CCA65D] rounded-xl p-2 text-xl md:text-xl'><FiPhoneCall/></div>
+                        <div className='bg-[#ffb134] rounded-xl p-2 text-xl md:text-xl'><FiPhoneCall/></div>
                         <div className='tracking-wide flex flex-col items-start w-full text-lg md:text-xl font-normal'>
-                            <p>00914933 - 270439</p>
-                            <p>00 914933 - 270565</p>
+                            <p>7558847558 - 270439</p>
+                            <p>7510231588 - 270565</p>
                         </div>
                     </div>
                     <div className='tracking-wide flex items-start w-full h-auto gap-2 md:gap-5'>
-                        <div className='bg-[#CCA65D] rounded-xl p-2 text-xl  md:text-xl'><FiMail/></div>
-                        <p className=' text-lg md:text-xl font-normal'>aljamiaalislamiya@gmail.com</p>
+                        <div className='bg-[#ffb134] rounded-xl p-2 text-xl  md:text-xl'><FiMail/></div>
+                        <p className=' text-lg md:text-xl font-normal'>Markazulhidaya@gmail.com</p>
                     </div>
                     <div className='tracking-wide flex items-start w-full h-auto gap-2 md:gap-5'>
-                        <div className='bg-[#CCA65D] rounded-xl p-2 text-xl  md:text-xl'><FiMapPin/></div>
+                        <div className='bg-[#ffb134] rounded-xl p-2 text-xl  md:text-xl'><FiMapPin/></div>
                         <div className='flex flex-col items-start w-full text-lg md:text-xl font-normal'>
-                            <p>SANTHAPURAM , P.O. PATTIKKAD</p>
-                            <p>679 325 , MALAPPURAM, KERALA</p>
+                            <p>KODAKKAD , P.O. MANNARKKAD</p>
+                            <p>678583 , PALAKKAD, KERALA</p>
                         </div>
                     </div>
                 </div>
-                <iframe className='w-full h-full rounded' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.267055762801!2d76.22156737487161!3d11.018578854680792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cd2a01624cbd%3A0xacc202556b7e348d!2sAl%20Jamia%20Al%20Islamiya!5e0!3m2!1sen!2sin!4v1690725917954!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className='w-full h-full rounded' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7131662339693!2d76.3844296748081!3d10.985009489176733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d5c0ff1c28bf%3A0x7e45942e5bc16b2e!2sMarkazul%20hidaya%20kombam!5e0!3m2!1sen!2sin!4v1702974408710!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
   )
 }
 
-export default Contact
+export default Contact;

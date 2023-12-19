@@ -5,35 +5,35 @@ import grouptwo from '../../assets/Img/Grouptwo.svg'
 import groupthree from '../../assets/Img/Groupthree.svg'
 
 function HomeThree() {
-  useCountUp({ ref: '1', end: 22, duration: 10 });
-	useCountUp({ ref: '2', end: 22, duration: 10 });
-	useCountUp({ ref: '3', end: 22, duration: 10 });
-	useCountUp({ ref: '4', end: 22, duration: 10 });
+  useCountUp({ ref: '1', end: 250, duration: 5 });
+	useCountUp({ ref: '2', end: 3000, duration: 5 });
+	useCountUp({ ref: '3', end: 1000, duration: 5 });
+	useCountUp({ ref: '4', end: 5000, duration: 5 });
 
     const countitems = [
         {
             id:'1',
             img:groupone,
             name:'Students',
-            measurement:'k+',
+            measurement:'+',
         },
         {
             id:'2',
             img:grouptwo,
             name:'Programs',
-            measurement:'k+',
+            measurement:'+',
         },
         {
             id:'3',
             img:groupthree,
             name:'Faculties',
-            measurement:'k+',
+            measurement:'+',
         },
         {
             id:'4',
             img:groupone,
             name:'Alumni',
-            measurement:'k+',
+            measurement:'+',
         }
     ]
   return (

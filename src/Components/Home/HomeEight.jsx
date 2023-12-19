@@ -53,10 +53,10 @@ function HomeEight() {
              className="w-full h-auto px-2 pt-5 pb-16 overflow-y-visible"
            >
             {DepartData.map((dep)=>(
-             <SwiperSlide className="transition-all bg-white  hover:shadow-xl drop-shadow-lg rounded-3xl">
-                <img src={dep.img} className='object-cover w-full h-1/2' alt="" />
+             <SwiperSlide className="transition-all h-full bg-white  hover:shadow-xl drop-shadow-lg rounded-3xl">
+                <img src={dep.img} className='object-cover w-full h-48 rounded-t-3xl' alt="" />
                 <div className='flex flex-col items-center justify-center w-full p-3 space-y-4 text-center h-1/2'>
-                  <h2 className='text-[#CEA553] text-2xl leading-7'>{dep.title}</h2>
+                  <h2 className='text-[#ffb134] text-2xl leading-7'>{dep.title}</h2>
                   <a href={dep.buttonTo}  className='rounded-md lg:rounded-lg cursor-pointer w-auto bg-[#555555] text-[#555555] bg-opacity-10 pt-0.5 px-4 xl:px-6 pb-1 text-xs xl:text-sm font-sans'>
                      Learn More
                    </a>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import icon2 from './Img/icon2.svg'
-import instructorImg from './Img/Faculties/FacultiesImg2.png'
+import instructorImg from './Img/Faculties/download.jpg'
 
 function CourseDetielsTab() {
     const [activeTab, setActiveTab] = useState('AboutCourse');
@@ -44,7 +44,7 @@ function CourseDetielsTab() {
         {activeTab === 'AboutCourse' && (
             <div className='flex flex-col items-center md:items-start text-center w-full h-full gap-8 md:gap-6   md:text-start'>
                 <div className='flex flex-col md:flex-row  items-center justify-start w-full gap-5 md:gap-10 '>
-                    <h2 className='text-[#555555] text-3xl md:text-5xl lg:text-[3.5rem]' >Certificate Courese in <br /> maqasid Al Sharia</h2>
+                    <h2 className='text-[#555555] text-3xl md:text-5xl lg:text-[3.5rem]' >Certificate Courese in <br />Markazul Hidaya</h2>
                     <div className='flex items-center gap-4 md:gap-6'>
                         <div className=' text-[#555555] justify-center  cursor-pointer w-auto font-normal px-3 lg:px-4 space-x-1.5 flex items-center  py-1 bg-[#CDCDCD] rounded-lg '>
                             <img src={icon2} alt="" className='w-4 lg:w-5'/>
@@ -57,14 +57,14 @@ function CourseDetielsTab() {
                     </div>
                 </div>
                 <p className='pb-2 font-sans xs:text-base sm:text-lg  lg:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uns of Lorem Ipsum.Lorem Ipsum is simply dummy text of en the industry's standard dumm the 1500s, when an unknown printer took a galley of type and scrambled it to make a type splly unchanged. versions of Lorem Ipsum.</p>
-                <div className='justify-center  cursor-pointer w-auto px-4 lg:px-6 flex items-center  py-1.5 lg:py-2 bg-[#CCA65D] rounded-md lg:rounded-lg'>
+                <div className='justify-center  cursor-pointer w-auto px-4 lg:px-6 flex items-center  py-1.5 lg:py-2 bg-[#ffb134] rounded-md lg:rounded-lg'>
                      <p class="text-white text-base font-normal font-sans tracking-wide">Apply Now</p>
                 </div>
             </div>
         )}
         {activeTab === 'Syllabus' && (
             <div className='flex flex-col items-start w-full h-full gap-6 md:gap-8 text-start'>
-                <h2 className='text-[#555555] text-3xl md:text-5xl lg:text-[3.5rem]' >Certificate Courese in <br /> maqasid Al Sharia</h2>
+                <h2 className='text-[#555555] text-3xl md:text-5xl lg:text-[3.5rem]' >Certificate Courese in <br />Markazul Hidaya</h2>
                 <ul className=' font-sans text-base md:text-lg list-disc list-inside'>
                     <li>How to begin working as a UX Designer using Figma.</li>
                     <li>How to use Figma for Essential UX Design & UI Design</li>
@@ -96,7 +96,7 @@ function CourseDetielsTab() {
             <div className='flex flex-col md:flex-row items-start w-full h-full gap-8 md;gap-10 lg:p-12'>
                 <img src={instructorImg} className='w-full md:auto object-cover h-80 md:h-auto rounded-xl lg:rounded-3xl' alt="" />
                 <div className='flex flex-col items-start w-full h-full gap-4 md:gap-6 text-start'>
-                    <h2 className='text-2xl font-normal text-[#CCA65D] select-none lg:text-3xl xl:text-4xl'>Dr Abduslam Ahmed</h2>
+                    <h2 className='text-2xl font-normal text-[#ffb134] select-none lg:text-3xl xl:text-4xl'>Dr Muhammed Musliyar</h2>
                     <p className='font-sans text-base lg:text-lg xl:text-xl'>Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially uns of Lorem Ipsum.Lorem Ipsum is simply dummy text of en the industry's standard dumm the 1500s, when an unknown printer took a galley of type and scrambled it to make a type splly unchanged. versions of Lorem Ipsum. electronic typesetting, remaining essentially uns of Lorem Ipsum.Lorem Ipsum is simply dummy text of en the industry's standard dumm the 1500s, when an unknown printer took a galley of type and scrambled it to make a type splly unchanged. versions of Lorem Ipsum.</p>
                 </div>
             </div>

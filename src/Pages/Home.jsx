@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import homebg from '../assets/Img/homebg.png'
+import hafe from '../assets/Img/hafe.jpg'
 import HomeOne from '../Components/Home/HomeOne';
 import HomeTwo from '../Components/Home/HomeTwo';
 import HomeThree from '../Components/Home/HomeThree';
@@ -43,7 +43,7 @@ function Home() {
 
   return (
     <div className='w-full h-full'>
-    <div id='Home' style={{backgroundImage: `url(${homebg})`}} className='relative flex flex-col items-center justify-end w-full h-screen px-3 py-16 space-y-5 bg-top bg-no-repeat md:px-10 lg:px-10 xl:px-36 lg:py-20 xl:py-24'>
+    <div id='Home' style={{backgroundImage:`url(${hafe})`}} className='relative flex flex-col items-center justify-end w-full h-screen px-3 py-16 space-y-5 bg-top bg-no-repeat md:px-10 lg:px-10 xl:px-36 lg:py-20 xl:py-24'>
         <div className="flex flex-col items-center justify-center w-full h-auto space-y-5 text-center md:text-start md:items-start">
           <div className="w-full h-auto">
              <ul className="flex items-center justify-start w-full space-x-3 md:space-x-4" role="tablist">
@@ -60,10 +60,10 @@ function Home() {
              </ul>
           </div>
           <div className="w-full h-full text-5xl md:w-2/3 lg:w-1/2 md:text-6xl lg:text-7xl" id={activeTab}>
-            {activeTab === '1' && <h2 className='text-white'>Lorem  sit amet ipsum amet dolor sit amet.  1</h2>}
-            {activeTab === '2' && <h2 className='text-white'> Lorem  sit amet ipsum amet dolor sit amet. 2</h2>}
-            {activeTab === '3' && <h2 className='text-white'> Lorem  sit amet ipsum amet dolor sit amet. 3</h2>}
-            {activeTab === '4' && <h2 className='text-white'> Lorem  sit amet ipsum amet dolor sit amet. 4</h2>}
+            {activeTab === '1' && <h2 className='text-white'>MARKAZUL HIDAYA.  1</h2>}
+            {activeTab === '2' && <h2 className='text-white'> HIDAYA ZAHRATUL QURAN. 2</h2>}
+            {activeTab === '3' && <h2 className='text-white'> HADIYA ISLAMIYA ARABIC COLLEGE. 3</h2>}
+            {activeTab === '4' && <h2 className='text-white'> MOULANA ENGLISH MEDIUM SCHOOL. 4</h2>}
           </div>
         </div>
     </div>

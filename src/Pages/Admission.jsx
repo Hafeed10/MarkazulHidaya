@@ -11,7 +11,7 @@ function Admission() {
         <div className='w-full h-full px-3 md:px-10 lg:px-10 xl:px-36'>
             <div className='relative flex items-start justify-center w-full h-auto text-start'>
                 <img src={AdmissionBg} className='rounded-3xl w-full h-72 md:h-full' alt="" />
-                <h2 className='absolute inset-0 h-full text-4xl lg:text-5xl xl:text-6xl text-white top-[30%] left-12 md:left-20'>Maqasid <br /> Al Sharia <br /> (Intermediate)</h2>
+                <h2 className='absolute inset-0 h-full text-4xl lg:text-5xl xl:text-6xl text-white top-[30%] left-12 md:left-20'>Markazul <br /> Hidaya <br /> (Intermediate)</h2>
             </div>
             <div className=' pt-20 lg:pt-24'>
                 <CourseDetielsTab/> 

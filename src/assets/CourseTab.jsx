@@ -8,15 +8,15 @@ function CourseTab() {
   const Tabs = [
     {
       tabKey: 'Certificate',
-      title: 'Certificate'
+      title: 'BA PHILOSOPHY'
     },
     {
       tabKey: 'Diploma',
-      title: 'Diploma'
+      title: 'BA ARABIC'
     },
     {
       tabKey: 'ShortTerm',
-      title: 'Short Term'
+      title: 'BA ENGLISH'
     },
   ];
 
@@ -54,7 +54,7 @@ function CourseTab() {
           {Tabs.map((tab) => (
             <li key={tab.tabKey} className="text-center cursor-pointer">
               <button
-                className={`hover:text-[#CCA65D] text-[#CCA65D]  ${activeTab === tab.tabKey ? 'border-[#6E8B3D] border-b-2 lg:border-b-4' : ''}`}
+                className={`hover:text-[#ffb134] text-[#ffb134]  ${activeTab === tab.tabKey ? 'border-[#6E8B3D] border-b-2 lg:border-b-4' : ''}`}
                 onClick={() => handleTabSelect(tab.tabKey)}
                 role="tab"
               >

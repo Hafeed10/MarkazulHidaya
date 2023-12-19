@@ -56,20 +56,20 @@ const Footer = () => {
               <span className="text-2xl">
                 <CgPhone />
               </span>{' '}
-              <span>00914933 - 270439 <br /> 00914933 - 270439</span>
+              <span>7558847558 - 270439 <br /> 7510231588 - 270439</span>
             </li>
             <li className="flex items-center tracking-wider space-x-2.5">
               <span className="text-2xl">
                 <CgMail />
               </span>{' '}
-              <span>aljamiaalislamia@gmail.com</span>
+              <span>Mrkazuhidaya@gmail.com</span>
             </li>
             <li className="flex items-center tracking-wider space-x-2.5">
               <span className="text-2xl">
                 <FiMapPin />
               </span>{' '}
               <span>
-                SANTHAPURAM . P.O. PATTIKKAD <br /> 679325, MALAPPURA, KERALA
+                KODAKKAD . P.O. MANNARKKAD <br /> 678583, PALAKKAD, KERALA
               </span>
             </li>
           </ul>
@@ -78,7 +78,7 @@ const Footer = () => {
       <hr className="my-5" />
       <div className="flex flex-col items-center md:flex-row md:justify-between">
         <h1 className="text-base font-sans font-thin text-center md:text-left">
-          © 2023 al jamia All Rights Reserved Privacy Policy
+          © 2023 Markazul Hidaya All Rights Reserved Privacy Policy
         </h1>
         <div className="flex space-x-8 text-xl items-center mt-5 md:mt-0">
           <a href="#">
