@@ -9,7 +9,7 @@ import Events from './Pages/Events';
 import Faculties from './Pages/Faculties';
 import FacultiCard from './Components/Faculties/FacultiCard';
 import Admission from './Pages/Admission';
-import Contact from './Pages/Contact';
+import Contact from './Pages/Contact'
 
 function App() {
   return (
