@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Img/logo.png';
+import logo from '../assets/Img/Life/hidaya1.png';
 import { Link } from 'react-scroll';
 import { Link as Tolink } from 'react-router-dom';
 import { CgFacebook, CgInstagram, CgMail, CgPhone, CgTwitter } from 'react-icons/cg';

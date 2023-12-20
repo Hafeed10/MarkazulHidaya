@@ -1,7 +1,9 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { CgClose, CgMenuRightAlt } from 'react-icons/cg';
-import logo from './Img/logo.png';
+
+import logo from '../assets/Img/Life/hidaya1.png'
+// Rest of your code...
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
@@ -33,7 +35,7 @@ function Header() {
     <div className={`w-full h-auto ${ location.pathname === '/' ? 'fixed left-0 top-0' : ''}  px-3 md:px-10 lg:px-10 xl:px-36 py-2 z-50 ${fix &&  location.pathname === '/' ? 'bg-[#ffffff] shadow-lg drop-shadow-md shadow-[#cca55d34] py-4' : 'md:py-8  lg:py-10'}`}>
       <div className="flex items-center justify-between   w-full h-full">
         <Link to='/'>
-        <img onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className={` ${fix  &&  location.pathname === '/' ? ' w-44 md:w-52 xl:w-72' : 'w-44 md:w-52 xl:w-72 '} `} src={logo} alt="" />
+        <img onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className={` ${fix  &&  location.pathname === '/' ? ' w-44  md:w-52 xl:w-72' : 'w-44  md:w-52 xl:w-72 '} `}  src={logo} alt="" />
         </Link>
         <ul className="xl:flex hidden space-x-7">
           {navigations.map((navigation, index) => (
