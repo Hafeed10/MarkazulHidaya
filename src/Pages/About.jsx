@@ -1,12 +1,12 @@
 import React from 'react'
-import AboutImg from '../assets/Img/hafe.jpg'
+import AboutImg from '../assets/Img/silver.jpg'
 import VisionImg from '../assets/Img/groundtwo.jpg'
 import MissionImg from '../assets/Img/groundtwo.jpg'
 import PatternBg from '../assets/Img/bgPattern.jpg'
-import Life1 from '../assets/Img/Life/Life1.png'
-import Life2 from '../assets/Img/Life/Life2.png'
-import Life3 from '../assets/Img/Life/Life3.png'
-import Life4 from '../assets/Img/Life/Life4.png'
+import Life1 from '../assets/Img/hafe.jpg'
+import Life2 from '../assets/Img/palikku.jpg'
+import Life3 from '../assets/Img/500.jpg'
+import Life4 from '../assets/Img/500.jpg'
 
 function About() {
   return (

@@ -29,6 +29,9 @@ function Home() {
     {
       tabKey: '4',
     },
+    {
+      tabKey: '5',
+    },
   ];
 
   useEffect(() => {
@@ -64,6 +67,7 @@ function Home() {
             {activeTab === '2' && <h2 className='text-white'> HIDAYA ZAHRATUL QURAN. 2</h2>}
             {activeTab === '3' && <h2 className='text-white'> HADIYA ISLAMIYA ARABIC COLLEGE. 3</h2>}
             {activeTab === '4' && <h2 className='text-white'> MOULANA ENGLISH MEDIUM SCHOOL. 4</h2>}
+            {activeTab === '5' && <h2 className='text-white'> HIDAYA HIFZQURHAN COLLAGE. 5</h2>}
           </div>
         </div>
     </div>
