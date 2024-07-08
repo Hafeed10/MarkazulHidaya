@@ -10,7 +10,7 @@ import Faculties from "./Pages/Faculties";
 import FacultiCard from "./Components/Faculties/FacultiCard";
 import Admission from "./Pages/Admission";
 import Contact from "./Pages/Contact";
-import OldGallery from "./Pages/OldGallery";
+import Gallery from "./Pages/Gallery";
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
             <Route path=":id" element={<FacultiCard />} />
           </Route>
           <Route path="/Events" element={<Events />} />
-          <Route path="/OldGallery" element={<OldGallery />} />
+          <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Admission" element={<Admission />} />
           <Route path="/Contacts" element={<Contact />} />
         </Routes>
