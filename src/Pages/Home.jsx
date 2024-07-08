@@ -89,15 +89,20 @@ function Home() {
             )}
             {activeTab === "3" && (
               <h2 className="text-white text-6xl">
-                {" "}
                 HADIYA ISLAMIYA ARABIC COLLEGE.
               </h2>
             )}
             {activeTab === "4" && (
-              <h2 className="text-white"> MOULANA ENGLISH MEDIUM SCHOOL.</h2>
+              <h2 className="text-white text-6xl">
+                {" "}
+                MOULANA ENGLISH MEDIUM SCHOOL.
+              </h2>
             )}
             {activeTab === "5" && (
-              <h2 className="text-white"> HIDAYA HIFZQURHAN COLLAGE.</h2>
+              <h2 className="text-white text-6xl">
+                {" "}
+                HIDAYA HIFZQURHAN COLLAGE.
+              </h2>
             )}
           </div>
         </div>
