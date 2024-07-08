@@ -1,34 +1,48 @@
-import React from 'react';
-import logo from '../assets/Img/Life/hidaya1.png';
-import { Link } from 'react-scroll';
-import { Link as Tolink } from 'react-router-dom';
-import { CgFacebook, CgInstagram, CgMail, CgPhone, CgTwitter } from 'react-icons/cg';
-import { FiMapPin } from 'react-icons/fi';
+import React from "react";
+import logo from "../assets/Img/Life/hidaya1.png";
+import { Link } from "react-scroll";
+import { Link as Tolink } from "react-router-dom";
+import {
+  CgFacebook,
+  CgInstagram,
+  CgMail,
+  CgPhone,
+  CgTwitter,
+} from "react-icons/cg";
+import { FiMapPin } from "react-icons/fi";
 
 const Footer = () => {
   const navigations = [
-    { option: 'Home', path: 'Home' },
-    { option: 'Academics', path: 'Academics' },
-    { option: 'Admission', path: 'Admission' },
-    { option: 'Examination', path: 'Examination' },
-    { option: 'Event', path: 'Event' },
-    { option: 'Contact', path: 'Contact' }
+    { option: "Home", path: "Home" },
+    { option: "Academics", path: "Academics" },
+    { option: "Admission", path: "Admission" },
+    { option: "Examination", path: "Examination" },
+    { option: "Event", path: "Event" },
+    { option: "Contact", path: "Contact" },
   ];
 
   return (
     <footer className="bg-[#2C2C2C] text-white px-3 md:px-10 lg:px-10 xl:px-36 py-7 md:py-16">
       <div className="grid gap-5 md:gap-10 lg:gap-32 opacity-90 font-sans items-end md:grid-cols-3">
         <div className="space-y-5 py-5">
-        <Tolink to='/'>
-        <img onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} className='cursor-pointer w-80' src={logo} alt="" />
-        </Tolink>
+          <Tolink to="/">
+            <img
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }}
+              className="cursor-pointer w-80"
+              src={logo}
+              alt=""
+            />
+          </Tolink>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab sequi iusto! Numquam, saepe ipsam iste
-            mollitia odit exercitationem molestiae labore voluptates culpa unde placeat quisquam. Doloribus laboriosam
-            sequi corporis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab
+            sequi iusto! Numquam, saepe ipsam iste mollitia odit exercitationem
+            molestiae labore voluptates culpa unde placeat quisquam. Doloribus
+            laboriosam sequi corporis.
           </p>
         </div>
-        <div className='py-5'>
+        <div className="py-5">
           <ul className="space-y-3 h-full flex flex-col items-start justify-between">
             {navigations.map((navigation, index) => (
               <li
@@ -49,25 +63,27 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className='py-5'>
+        <div className="py-5">
           <h4 className="text-lg font-semibold tracking-wide mb-5">Contact</h4>
           <ul className="space-y-2.5">
             <li className="flex items-center tracking-wider space-x-2.5">
               <span className="text-2xl">
                 <CgPhone />
-              </span>{' '}
-              <span>7558847558 - 270439 <br /> 7510231588 - 270439</span>
+              </span>{" "}
+              <span>
+                +914924237224 - 270439 <br /> +914924237224 - 270439
+              </span>
             </li>
             <li className="flex items-center tracking-wider space-x-2.5">
               <span className="text-2xl">
                 <CgMail />
-              </span>{' '}
+              </span>{" "}
               <span>Mrkazuhidaya@gmail.com</span>
             </li>
             <li className="flex items-center tracking-wider space-x-2.5">
               <span className="text-2xl">
                 <FiMapPin />
-              </span>{' '}
+              </span>{" "}
               <span>
                 KODAKKAD . P.O. MANNARKKAD <br /> 678583, PALAKKAD, KERALA
               </span>
