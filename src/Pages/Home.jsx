@@ -32,6 +32,9 @@ function Home() {
     {
       tabKey: "5",
     },
+    {
+      tabKey: "6",
+    },
   ];
 
   useEffect(() => {
@@ -88,9 +91,7 @@ function Home() {
               <h2 className="text-white text-6xl"> HIDAYA ZAHRATUL QURAN.</h2>
             )}
             {activeTab === "3" && (
-              <h2 className="text-white text-6xl">
-                HADIYA ISLAMIYA ARABIC COLLEGE.
-              </h2>
+              <h2 className="text-white text-6xl">HADIYA WOMEN'S ACADEMY.</h2>
             )}
             {activeTab === "4" && (
               <h2 className="text-white text-6xl">
@@ -100,10 +101,12 @@ function Home() {
             )}
             {activeTab === "5" && (
               <h2 className="text-white text-6xl">
-                {" "}
                 HIDAYA HIFZQURHAN COLLAGE.
               </h2>
             )}
+            {activeTab === "6" && (
+              <h2 className="text-white text-6xl">HIDAYA NISA GARDEN.</h2>
+            )}{" "}
           </div>
         </div>
       </div>
@@ -120,3 +123,7 @@ function Home() {
 }
 
 export default Home;
+{
+  /* <h2 className="text-white text-6xl">Nisa Garden</h2>; */
+}
+//

@@ -11,6 +11,7 @@ import FacultiCard from "./Components/Faculties/FacultiCard";
 import Admission from "./Pages/Admission";
 import Contact from "./Pages/Contact";
 import Gallery from "./Pages/Gallery";
+import Donation from "./Pages/Donation";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Admission" element={<Admission />} />
           <Route path="/Contacts" element={<Contact />} />
+          <Route path="/Donation" element={<Donation />} />{" "}
         </Routes>
         <Footer />
       </Router>
