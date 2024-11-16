@@ -97,50 +97,6 @@ export const CertificateData = [
     buttonTo: "#",
   },
 ];
-export const DiplomaData = [
-  {
-    img: img7,
-    title: "MCA Program.",
-    description:
-      "Our Master of Computer Applications (MCA) program offers advanced knowledge in software development, database management, and IT infrastructure. Gain expertise in emerging technologies and leadership skills to thrive in the dynamic field of computer applications. Join us to advance your career as a skilled IT professional.",
-    buttonTo: "#",
-  },
-  {
-    img: img2,
-    title: "M.COM Program",
-    description:
-      "Our Master of Commerce (M.Com) program provides advanced knowledge in accounting, finance, business management, and economics. Develop critical thinking and analytical skills to excel in the global business environment. Join us to enhance your career opportunities in finance, accounting, and related fields.",
-    buttonTo: "#",
-  },
-  {
-    img: img3,
-    title: "MA Economics Program",
-    description:
-      "Deepen your understanding of economic theory, policy analysis, and quantitative methods with our MA in Economics. Gain insights into global economic trends and develop the analytical skills necessary for impactful research and decision-making. Join us to pursue a career in academia, government, or international organizations.",
-    buttonTo: "#",
-  },
-  {
-    img: img4,
-    title: "MA Arabic Program",
-    description:
-      "Immerse yourself in the rich traditions of Arabic language, literature, and culture with our MA in Arabic. Explore classical and modern texts, enhance your linguistic skills, and deepen your understanding of Arab civilization. Join us to become proficient in Arabic language and literature, preparing for diverse career opportunities in education, translation, and cultural institutions.",
-    buttonTo: "#",
-  },
-  {
-    img: img5,
-    title: "MA English Program",
-    description:
-      "Engage deeply with the complexities of literature, language, and critical theory with our MA in English. Explore a wide array of literary genres and theoretical perspectives, refine your analytical and writing skills, and join a vibrant intellectual community. Join us to advance your understanding of English literature and language, preparing for careers in academia, publishing, and beyond.",
-    buttonTo: "#",
-  },
-  {
-    img: img6,
-    title: "Ma Philosophy program",
-    description:
-      "Delve into the fundamental questions of existence, ethics, and knowledge with our MA in Philosophy. Explore major philosophical traditions, sharpen your critical thinking abilities, and engage in rigorous philosophical inquiry. Join us to deepen your understanding of the world and prepare for careers in academia, research, or various professional fields.",
-    buttonTo: "#",
-  },
-];
 export const ShortTermData = [
   {
     img: img1,
@@ -182,6 +138,51 @@ export const ShortTermData = [
     title: "BA Economics",
     description:
       "Explore the principles of economics, market dynamics, and policy analysis with our BA in Economics. Gain insights into global economic trends, quantitative methods, and decision-making processes. Join us to understand the complexities of the modern economy and contribute to shaping its future.",
+    buttonTo: "#",
+  },
+];
+
+export const DiplomaData = [
+  {
+    img: img7,
+    title: "MCA Program.",
+    description:
+      "Our Master of Computer Applications (MCA) program offers advanced knowledge in software development, database management, and IT infrastructure. Gain expertise in emerging technologies and leadership skills to thrive in the dynamic field of computer applications. Join us to advance your career as a skilled IT professional.",
+    buttonTo: "#",
+  },
+  {
+    img: img2,
+    title: "M.COM Program",
+    description:
+      "Our Master of Commerce (M.Com) program provides advanced knowledge in accounting, finance, business management, and economics. Develop critical thinking and analytical skills to excel in the global business environment. Join us to enhance your career opportunities in finance, accounting, and related fields.",
+    buttonTo: "#",
+  },
+  {
+    img: img3,
+    title: "MA Economics Program",
+    description:
+      "Deepen your understanding of economic theory, policy analysis, and quantitative methods with our MA in Economics. Gain insights into global economic trends and develop the analytical skills necessary for impactful research and decision-making. Join us to pursue a career in academia, government, or international organizations.",
+    buttonTo: "#",
+  },
+  {
+    img: img4,
+    title: "MA Arabic Program",
+    description:
+      "Immerse yourself in the rich traditions of Arabic language, literature, and culture with our MA in Arabic. Explore classical and modern texts, enhance your linguistic skills, and deepen your understanding of Arab civilization. Join us to become proficient in Arabic language and literature, preparing for diverse career opportunities in education, translation, and cultural institutions.",
+    buttonTo: "#",
+  },
+  {
+    img: img5,
+    title: "MA English Program",
+    description:
+      "Engage deeply with the complexities of literature, language, and critical theory with our MA in English. Explore a wide array of literary genres and theoretical perspectives, refine your analytical and writing skills, and join a vibrant intellectual community. Join us to advance your understanding of English literature and language, preparing for careers in academia, publishing, and beyond.",
+    buttonTo: "#",
+  },
+  {
+    img: img6,
+    title: "Ma Philosophy program",
+    description:
+      "Delve into the fundamental questions of existence, ethics, and knowledge with our MA in Philosophy. Explore major philosophical traditions, sharpen your critical thinking abilities, and engage in rigorous philosophical inquiry. Join us to deepen your understanding of the world and prepare for careers in academia, research, or various professional fields.",
     buttonTo: "#",
   },
 ];

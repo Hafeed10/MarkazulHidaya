@@ -1,4 +1,3 @@
-import React from "react";
 import bgAcademic from "../../assets/Img/bgPattern.jpg";
 import { DepartData } from "../../Data/DepartData";
 
@@ -62,8 +61,8 @@ function HomeEight() {
         modules={[Pagination]}
         className="w-full h-auto px-2 pt-5 pb-16 overflow-y-visible"
       >
-        {DepartData.map((dep) => (
-          <SwiperSlide className="transition-all h-full bg-white  hover:shadow-xl drop-shadow-lg rounded-3xl">
+        {DepartData.map((dep,i) => (
+          <SwiperSlide key={i} className="transition-all h-full bg-white  hover:shadow-xl drop-shadow-lg rounded-3xl">
             <img
               src={dep.img}
               className="object-cover w-full h-48 rounded-t-3xl"

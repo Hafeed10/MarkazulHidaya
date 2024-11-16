@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiX, FiXCircle } from 'react-icons/fi';
+import {  FiXCircle } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 
 function Facultimodal({ onClose, onRequest, closePath, item }) {

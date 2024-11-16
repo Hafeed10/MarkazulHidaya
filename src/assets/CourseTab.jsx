@@ -14,13 +14,14 @@ function CourseTab() {
       tabKey: "Certificate",
       title: "ALL PROGRAMMES",
     },
-    {
-      tabKey: "Diploma",
-      title: "PG PROGRAMMES",
-    },
+
     {
       tabKey: "ShortTerm",
       title: "UG PROGRAMMES",
+    },
+    {
+      tabKey: "Diploma",
+      title: "PG PROGRAMMES",
     },
   ];
   const Tabse = [
@@ -29,13 +30,14 @@ function CourseTab() {
       title: "ALL ",
     },
     {
-      tabKey: "Diploma",
-      title: "PG ",
-    },
-    {
       tabKey: "ShortTerm",
       title: "UG ",
     },
+    {
+      tabKey: "Diploma",
+      title: "PG ",
+    },
+
   ];
   const handleTabSelect = (tabKey) => {
     setActiveTab(tabKey);
@@ -73,11 +75,10 @@ function CourseTab() {
           {Tabs.map((tab) => (
             <li key={tab.tabKey} className="text-center cursor-pointer">
               <button
-                className={`hover:text-[#ffb134] text-[#ffb134]  ${
-                  activeTab === tab.tabKey
+                className={`hover:text-[#ffb134] text-[#ffb134]  ${activeTab === tab.tabKey
                     ? "border-[#6E8B3D] border-b-2 lg:border-b-4"
                     : ""
-                }`}
+                  }`}
                 onClick={() => handleTabSelect(tab.tabKey)}
                 role="tab"
               >
@@ -96,11 +97,10 @@ function CourseTab() {
           {Tabse.map((tab) => (
             <li key={tab.tabKey} className="text-center cursor-pointer">
               <button
-                className={`hover:text-[#ffb134] text-[#ffb134]  ${
-                  activeTab === tab.tabKey
+                className={`hover:text-[#ffb134] text-[#ffb134]  ${activeTab === tab.tabKey
                     ? "border-[#6E8B3D] border-b-2 lg:border-b-4"
                     : ""
-                }`}
+                  }`}
                 onClick={() => handleTabSelect(tab.tabKey)}
                 role="tab"
               >
