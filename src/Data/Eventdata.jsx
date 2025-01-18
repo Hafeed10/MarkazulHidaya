@@ -1,9 +1,6 @@
 import images1 from "../assets/Img/img2.jpg";
 import images2 from "../assets/Img/111.webp";
 import images3 from "../assets/Img/silver.jpg";
-import images4 from "../assets/Img/taj.jpg";
-import images5 from "../assets/Img/thagal.jpg";
-import images6 from "../assets/Img/usthad.jpg";
 import images7 from "../assets/Img/100.jpg";
 
 export const EventData = [
@@ -29,33 +26,6 @@ export const EventData = [
   {
     img: images3,
     title: "Silver Jubili Program",
-    time: "23",
-    date: "30 June 2023 ",
-    description:
-      "The Silver Jubilee Program celebrates a significant milestone of 25 years, highlighting achievements and milestones while honoring the journey and contributions of those involved.",
-    buttonTo: "#",
-  },
-  {
-    img: images4,
-    title: "Independence Day",
-    time: "23",
-    date: "30 June 2023 ",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ",
-    buttonTo: "#",
-  },
-  {
-    img: images5,
-    title: "Lorem Ipsum is simply dummy text of the dummy text",
-    time: "23",
-    date: "30 June 2023 ",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ",
-    buttonTo: "#",
-  },
-  {
-    img: images6,
-    title: "Lorem Ipsum is simply dummy text of the dummy text",
     time: "23",
     date: "30 June 2023 ",
     description:

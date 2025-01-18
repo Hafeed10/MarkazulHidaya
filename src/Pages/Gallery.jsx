@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import AboutImg from "../assets/Img/Faculties/images (1).jpeg"; // Update the path to your image file
 
