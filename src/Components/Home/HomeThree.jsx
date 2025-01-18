@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useCountUp } from "react-countup";
-import groupone from "../../assets/Img/Groupone.svg";
-import grouptwo from "../../assets/Img/Grouptwo.svg";
-import groupthree from "../../assets/Img/Groupthree.svg";
+import {countitems} from '../../Data/Counties'
+
+
 
 function HomeThree() {
   useCountUp({ ref: "1", end: 120, duration: 5 });
@@ -10,36 +12,11 @@ function HomeThree() {
   useCountUp({ ref: "3", end: 10, duration: 5 });
   useCountUp({ ref: "4", end: 1000, duration: 5 });
 
-  const countitems = [
-    {
-      id: "1",
-      img: groupone,
-      name: "Students",
-      measurement: "+",
-    },
-    {
-      id: "2",
-      img: grouptwo,
-      name: "Programs",
-      measurement: "+",
-    },
-    {
-      id: "3",
-      img: groupthree,
-      name: "Faculties",
-      measurement: "+",
-    },
-    {
-      id: "4",
-      img: groupone,
-      name: "Alumni",
-      measurement: "+",
-    },
-  ];
   return (
     <div className="w-full px-3 md:px-10 lg:px-10 xl:px-36 py-10 bg-white md:py-12 lg:py-14 h-auto">
       <div className="w-full h-full grid grid-cols-2 gap-y-4 md:grid-cols-4 items-center justify-center md:justify-between  ">
         {countitems.map((item) => (
+          // eslint-disable-next-line react/jsx-key
           <Items
             count={<span id={item.id} />}
             img={item.img}
@@ -51,8 +28,11 @@ function HomeThree() {
     </div>
   );
 }
-
 export default HomeThree;
+
+
+
+
 
 function Items(props) {
   return (

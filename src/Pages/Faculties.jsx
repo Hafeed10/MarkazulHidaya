@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
+
 import PatternBg from "../assets/Img/bgPattern.jpg";
 import { Leadershipdata, ShariaFacultiesdata } from "../Data/FacultiesData";
 import FacultiCard from "../Components/Faculties/FacultiCard";
@@ -43,7 +45,6 @@ function Faculties() {
           ))}
         </p>
       </div>
-
       <div
         style={{ backgroundImage: `url(${PatternBg})` }}
         className="relative flex flex-col items-center justify-center w-full h-full px-3 py-16 md:py-20 lg:py-24 bg-no-repeat gap-10 lG:gap-16  xl:gap-20 md:px-10 lg:px-10 xl:px-36"
@@ -64,7 +65,6 @@ function Faculties() {
           ))}
         </div>
       </div>
-
       <div className="w-full h-full flex flex-col px-3 gap-10 lg:gap-20 text-center md:px-10 lg:px-10 xl:px-36 py-16 md:py-20 lg:py-24">
         <h1 className="text-[#ffb134] text-3xl md:text-4xl lg:text-5xl">
           Hidaya Faculties
@@ -75,7 +75,6 @@ function Faculties() {
           ))}
         </div>
       </div>
-
       {Leadershipdata.map((item) => (
         <React.Fragment key={item.id}>
           {showModalId === item.id && (

@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+
 import { EventData } from "../Data/Eventdata";
 import EventStories from "../Components/Event/EventStories";
 import PatternBg from "../assets/Img/bgPattern.jpg";
@@ -8,6 +10,7 @@ function Events() {
   return (
     <div className="w-full h-full bg-white ">
       {EventData.slice(0, 1).map((item) => (
+        // eslint-disable-next-line react/jsx-key
         <div className="flex flex-col items-center justify-center w-full h-full px-3 py-20 space-y-12 text-center md:px-10 lg:px-10 xl:px-36">
           <h1 className="text-[#619A46] md:px-8 lg:px-16 xl:px-24 text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             {item.title}

@@ -1,4 +1,4 @@
-import img32 from "../assets/Img/Cours/images.jpeg";
+import img32 from "../assets/Img/img.jpg";
 import img31 from "../assets/Img/Faculties/WhatsApp Image 2024-05-18 at 21.40.36_1a95b999.jpg";
 export const Leadershipdata = [
   {

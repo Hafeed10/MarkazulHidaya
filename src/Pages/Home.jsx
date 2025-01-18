@@ -1,9 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
+
 import hafe from "../assets/Img/hafe.jpg";
 import HomeOne from "../Components/Home/HomeOne";
 import HomeTwo from "../Components/Home/HomeTwo";
 import HomeThree from "../Components/Home/HomeThree";
 import HomeFour from "../Components/Home/HomeFour";
+
 import HomeFive from "../Components/Home/HomeFive";
 import HomeSix from "../Components/Home/HomeSix";
 import HomeSeven from "../Components/Home/HomeSeven";
@@ -69,11 +72,10 @@ function Home() {
                 >
                   {activeTab && (
                     <div
-                      className={`cursor-pointer transition-all shadow-lg duration-500 rounded-full opacity-10 ${
-                        activeTab === tab.tabKey
+                      className={`cursor-pointer transition-all shadow-lg duration-500 rounded-full opacity-10 ${activeTab === tab.tabKey
                           ? "bg-[#619A46] w-7 h-3 "
                           : "bg-white  w-3 h-3"
-                      }`}
+                        }`}
                     ></div>
                   )}
                 </li>
@@ -91,6 +93,7 @@ function Home() {
               <h2 className="text-white text-6xl"> HIDAYA ZAHRATUL QURAN.</h2>
             )}
             {activeTab === "3" && (
+              // eslint-disable-next-line react/no-unescaped-entities
               <h2 className="text-white text-6xl">HADIYA WOMEN'S ACADEMY.</h2>
             )}
             {activeTab === "4" && (

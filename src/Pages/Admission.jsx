@@ -1,6 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
+
 import AdmissionBg from '../assets/Img/Admission/AdmissionBg.png'
 import bgAcademic from '../assets/Img/bgPattern.jpg';
+
 import CourseTab from '../assets/CourseTab';
 import CourseDetielsTab from '../assets/CourseDetielsTab';
 

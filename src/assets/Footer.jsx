@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+
 import logo from "../assets/Img/Life/hidaya1.png";
 import { Link } from "react-scroll";
 import { Link as Tolink } from "react-router-dom";
@@ -94,7 +96,7 @@ const Footer = () => {
       <hr className="my-5" />
       <div className="flex flex-col items-center md:flex-row md:justify-between">
         <h1 className="text-base font-sans font-thin text-center md:text-left">
-          © 2023 Markazul Hidaya All Rights Reserved Privacy Policy
+          © 2025 Markazul Hidaya All Rights Reserved Privacy Policy
         </h1>
         <div className="flex space-x-8 text-xl items-center mt-5 md:mt-0">
           <a href="#">

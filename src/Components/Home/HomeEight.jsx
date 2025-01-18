@@ -1,16 +1,9 @@
 import bgAcademic from "../../assets/Img/bgPattern.jpg";
 import { DepartData } from "../../Data/DepartData";
-
-// import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-import "tailwindcss/tailwind.css"; // Import Tailwind CSS
-
-// import required modules
+import "tailwindcss/tailwind.css";
 import { Pagination } from "swiper/modules";
 
 function HomeEight() {

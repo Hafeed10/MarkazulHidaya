@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
 import bgAcademic from "../../assets/Img/bgPattern.jpg";
 import DirectorImg from "../../assets/Img/img.jpg";
@@ -6,8 +7,7 @@ import { Home_six } from '../../Data/HomeSixone';
 function HomeSix() {
   useEffect(() => {
     async function fetchDescription() {
-      try {
-      } catch (error) {
+      try { /* empty */ } catch (error) {
         console.error("Error fetching the data:", error);
       }
     }
@@ -26,11 +26,11 @@ function HomeSix() {
       <div className="z-10 flex flex-col-reverse items-center justify-center w-full h-full md:flex-row md:justify-end">
         <img
           src={DirectorImg}
-          className="w-full h-fit p-4 md:w-1/2 rounded-3xl"
+           className="w-full md:w-auto object-cover h-fit md:h-80 rounded-xl lg:rounded-xl"
           alt="Director"
         />
-        <div className="flex h-full md:py-5 w-full md:w-1/2 flex-col text-[#555555] items-center text-center md:text-start  md:items-start font-sans space-y-11">
-          <p className="w-full text-base lg:text-xl  ">
+        <div className="flex flex-col items-start w-full h-full gap-4 md:gap-7 text-start pl-10">
+          <p className="w-full text-base font-sans lg:text-xl  ">
             {Home_six.map((item) => (
               <p key={item.id}>{item.content}</p>
             ))}

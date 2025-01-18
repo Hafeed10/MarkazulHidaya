@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { FiMail, FiMapPin, FiPhoneCall } from "react-icons/fi";
 
@@ -43,7 +44,7 @@ function Contact() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7131662339693!2d76.3844296748081!3d10.985009489176733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d5c0ff1c28bf%3A0x7e45942e5bc16b2e!2sMarkazul%20hidaya%20kombam!5e0!3m2!1sen!2sin!4v1702974408710!5m2!1sen!2sin"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import icon1 from "../../assets/Img/icon1.svg";
 
@@ -17,7 +19,7 @@ function HomeSeven() {
         </p>
         <div className="justify-center  cursor-pointer mt-3 w-auto px-4 lg:px-6 space-x-1.5 flex items-center  py-1 lg:py-1.5 bg-[#ffb134] rounded-lg lg:rounded-xl">
           <img src={icon1} alt="" className="w-5 lg:w-6" />
-          <p class="text-white text-base lg:text-lg font-normal font-sans tracking-wide">
+          <p className="text-white text-base lg:text-lg font-normal font-sans tracking-wide">
             Take a Tour
           </p>
         </div>

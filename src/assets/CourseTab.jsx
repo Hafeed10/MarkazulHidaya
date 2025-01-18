@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import CourseCard from "./CourseCard";
+
 import {
   CertificateData,
   DiplomaData,
@@ -76,8 +78,8 @@ function CourseTab() {
             <li key={tab.tabKey} className="text-center cursor-pointer">
               <button
                 className={`hover:text-[#ffb134] text-[#ffb134]  ${activeTab === tab.tabKey
-                    ? "border-[#6E8B3D] border-b-2 lg:border-b-4"
-                    : ""
+                  ? "border-[#6E8B3D] border-b-2 lg:border-b-4"
+                  : ""
                   }`}
                 onClick={() => handleTabSelect(tab.tabKey)}
                 role="tab"
@@ -98,8 +100,8 @@ function CourseTab() {
             <li key={tab.tabKey} className="text-center cursor-pointer">
               <button
                 className={`hover:text-[#ffb134] text-[#ffb134]  ${activeTab === tab.tabKey
-                    ? "border-[#6E8B3D] border-b-2 lg:border-b-4"
-                    : ""
+                  ? "border-[#6E8B3D] border-b-2 lg:border-b-4"
+                  : ""
                   }`}
                 onClick={() => handleTabSelect(tab.tabKey)}
                 role="tab"

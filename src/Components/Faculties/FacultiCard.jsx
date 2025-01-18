@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 
 function FacultiCard({ item }) {
@@ -10,7 +12,7 @@ function FacultiCard({ item }) {
         <h2 className='text-xl lg:text-2xl'>{item.name}</h2>
         <p className='pb-3 lg:pb-5  text-base lg:text-xl'>{item.position}</p>
         <div className='w-full py-2 lg:py-2.5  text-center'>
-            <a herf={item.buttonTo} className='rounded-lg w-auto bg-[#555555] text-[#555555] bg-opacity-10 pt-0.5 lg:pt-1 px-5 pb-1.5 text-sm lg:text-lg font-sans  '>Learn More</a>
+          <a href={item.buttonTo} className='rounded-lg w-auto bg-[#555555] text-[#555555] bg-opacity-10 pt-0.5 lg:pt-1 px-5 pb-1.5 text-sm lg:text-lg font-sans  '>Learn More</a>
         </div>
       </div>
     </div>

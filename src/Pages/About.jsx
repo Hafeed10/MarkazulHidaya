@@ -1,8 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+
 import AboutImg from "../assets/Img/silver.jpg";
 import VisionImg from "../assets/Img/Faculties/welcome.jpg";
 import MissionImg from "../assets/Img/Faculties/images.jpeg";
 import PatternBg from "../assets/Img/bgPattern.jpg";
+
 import Life1 from "../assets/Img/hafe.jpg";
 import Life2 from "../assets/Img/palikku.jpg";
 import Life3 from "../assets/Img/500.jpg";
@@ -27,9 +30,10 @@ function About() {
           ))}
         </p>
       </div>
+      {/* ======================================================================================================================================= */}
 
+      {/* ======================================================================================================================================= */}
       {/* Vission and mission  */}
-
       <div
         style={{ backgroundImage: `url(${PatternBg})` }}
         className="relative flex flex-col items-center justify-center w-full h-full px-3 py-16 md:py-20 lg:py-24 bg-no-repeat gap-y-10 md:gap-y-12 xl:gap-y-20 md:px-10 lg:px-10 xl:px-36"
@@ -50,6 +54,9 @@ function About() {
             alt=""
           />
         </div>
+        {/* ======================================================================================================================================= */}
+
+        {/* ======================================================================================================================================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-12 grid-rows-auto">
           <img
             className="object-cover w-full h-60 md:h-3/4 rounded"
@@ -68,6 +75,9 @@ function About() {
           </div>
         </div>
       </div>
+      {/* ======================================================================================================================================= */}
+
+      {/* ======================================================================================================================================= */}
       <div className="flex flex-col items-start justify-center w-full h-auto px-3 py-16 md:py-20 lg:py-24 space-y-12 md:px-10 lg:px-10 xl:px-36">
         <h2 className="text-4xl md:text-5xl lg:text-[3rem]">Campus Life</h2>
         <div className="grid w-full h-full grid-cols-1 grid-rows-auto md:grid-cols-2 gap-3 md:gap-5 ">

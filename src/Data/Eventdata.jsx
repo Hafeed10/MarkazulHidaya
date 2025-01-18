@@ -4,7 +4,7 @@ import images3 from "../assets/Img/silver.jpg";
 import images4 from "../assets/Img/taj.jpg";
 import images5 from "../assets/Img/thagal.jpg";
 import images6 from "../assets/Img/usthad.jpg";
-import images7 from "../assets/Img/images (4).jpg";
+import images7 from "../assets/Img/100.jpg";
 
 export const EventData = [
   {
