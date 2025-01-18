@@ -4,6 +4,7 @@ import PatternBg from "../assets/Img/bgPattern.jpg";
 import { Leadershipdata, ShariaFacultiesdata } from "../Data/FacultiesData";
 import FacultiCard from "../Components/Faculties/FacultiCard";
 import Facultimodal from "../Components/Faculties/Facultimodal";
+import { Facult } from '../Data/Facultie'
 
 function Faculties() {
   const [showModalId, setShowModalId] = useState(null);
@@ -37,12 +38,9 @@ function Faculties() {
           Faculties
         </h2>
         <p className="px-3 font-sans md:px-10 lg:px-10 xl:px-36 mt-4 text-center text-[#555555] text-base md:text-xl lg:text-2xl font-normal leading-snug tracking-wide">
-          Islamic Studies: Explore the depths of Islamic theology,
-          jurisprudence, and spirituality. Arabic Language: Master the language
-          of the Quran and classical Arabic literature. Islamic History:
-          Discover the rich history and heritage of Islam and Muslim
-          civilizations. Community Outreach: Engage in outreach activities to
-          promote understanding and unity within the community.
+          {Facult.map((item) => (
+            <p key={item.id}>{item.content}</p>
+          ))}
         </p>
       </div>
 

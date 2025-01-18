@@ -2,6 +2,7 @@ import React from "react";
 import { EventData } from "../Data/Eventdata";
 import EventStories from "../Components/Event/EventStories";
 import PatternBg from "../assets/Img/bgPattern.jpg";
+import {Home_Evens} from '../Data/Eventes'
 
 function Events() {
   return (
@@ -17,14 +18,9 @@ function Events() {
             alt=""
           />
           <p className="mt-4 text-center text-[#555555] text-base md:text-xl font-sans  lg:text-2xl font-light leading-snug tracking-wide">
-            The Hidaya Silver Jubilee marks the 25th anniversary of the Hidaya
-            organization. This milestone celebrates a quarter-century of
-            dedication and service in various fields, such as education,
-            healthcare, social welfare, and disaster relief. The jubilee serves
-            as an opportunity to reflect on the achievements, challenges, and
-            impact of Hidaya's work over the years, while also looking forward
-            to future goals and initiatives to continue their mission of
-            improving lives and fostering community development.
+            {Home_Evens.map((item) => (
+              <p key={item.id}>{item.content}</p>
+            ))}
           </p>
         </div>
       ))}

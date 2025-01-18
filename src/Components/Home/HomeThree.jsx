@@ -6,7 +6,7 @@ import groupthree from "../../assets/Img/Groupthree.svg";
 
 function HomeThree() {
   useCountUp({ ref: "1", end: 120, duration: 5 });
-  useCountUp({ ref: "2", end: 300, duration: 5 });
+  useCountUp({ ref: "2", end: 100, duration: 5 });
   useCountUp({ ref: "3", end: 10, duration: 5 });
   useCountUp({ ref: "4", end: 1000, duration: 5 });
 

@@ -61,11 +61,11 @@ function HomeEight() {
         modules={[Pagination]}
         className="w-full h-auto px-2 pt-5 pb-16 overflow-y-visible"
       >
-        {DepartData.map((dep,i) => (
-          <SwiperSlide key={i} className="transition-all h-full bg-white  hover:shadow-xl drop-shadow-lg rounded-3xl">
+        {DepartData.map((dep, i) => (
+          <SwiperSlide key={i} className="transition-all h-full bg-white  hover:shadow-xl drop-shadow-lg rounded-lg">
             <img
               src={dep.img}
-              className="object-cover w-full h-48 rounded-t-3xl"
+              className="object-cover w-full h-48 rounded-lg"
               alt=""
             />
             <div className="flex flex-col items-center justify-center w-full p-3 space-y-4 text-center h-1/2">

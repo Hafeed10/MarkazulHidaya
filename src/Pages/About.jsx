@@ -7,6 +7,7 @@ import Life1 from "../assets/Img/hafe.jpg";
 import Life2 from "../assets/Img/palikku.jpg";
 import Life3 from "../assets/Img/500.jpg";
 import Life4 from "../assets/Img/500.jpg";
+import { About_dat, Our_Vision, Our_Mission } from '../Data/AboutData'
 
 function About() {
   return (
@@ -21,18 +22,9 @@ function About() {
           alt=""
         />
         <p className="px-3 md:px-10 lg:px-10 xl:px-36 mt-4 font-sans text-start text-[#555555] text-base md:text-xl  lg:text-2xl font-normal leading-snug tracking-wide">
-          Markazul Hidayathil Islamiyya, established in the year 1996, is a
-          unique centre of education comprising of more than 12 institutions
-          with nearly thousand students on the rolls. It is pioneer institution
-          rendering socio cultural and educational service to the Kerala
-          Society. It stands as a praiseworthy establishment to mould a new
-          generation having high academic values, IT Tricks, soft skills and
-          deep knowledge in theology and Islamic studies. The Major Institutions
-          are Hifzul Qur'an college, College of Arts And Islamic studies,
-          Moulana English Medium School, Institute of Tailoring and Embroidery,
-          Computer Centre, Boarding madarasa for boys, Care for orphans and
-          destitute, Science Lab, Masjid, Library and Reading Room and
-          Charitable Activities.
+          {About_dat.map((item) => (
+            <p key={item.id}>{item.content}</p>
+          ))}
         </p>
       </div>
 
@@ -47,12 +39,9 @@ function About() {
           <div className=" order-2 space-y-3 md:space-y-4 lg:space-y-8">
             <h2 className="text-3xl md:text-4xl lg:text-[3rem] ">Our Vision</h2>
             <p className="font-sans text-sm md:text-base lg:text-xl">
-              Our vision at Markazul Hidaya is to be a beacon of knowledge and
-              spiritual enlightenment, empowering individuals to lead purposeful
-              lives guided by Islamic principles. We strive to foster a
-              community that embraces diversity, promotes education, and serves
-              humanity with compassion and integrity. Join us in our journey
-              towards excellence in faith, education, and community service.
+              {Our_Vision.map((item) => (
+                <p key={item.id}>{item.content}</p>
+              ))}
             </p>
           </div>
           <img
@@ -63,7 +52,7 @@ function About() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-12 grid-rows-auto">
           <img
-            className="object-cover w-full h-60 md:h-full rounded"
+            className="object-cover w-full h-60 md:h-3/4 rounded"
             src={MissionImg}
             alt=""
           />
@@ -72,15 +61,9 @@ function About() {
               Our Mission
             </h2>
             <p className="font-sans text-sm md:text-base lg:text-xl">
-              At Markazul Hidaya, our mission is to provide comprehensive
-              Islamic education and spiritual guidance rooted in authentic
-              teachings. We aim to nurture individuals to become knowledgeable,
-              ethical, and compassionate leaders who contribute positively to
-              society. Through educational programs, community outreach, and
-              fostering a culture of excellence, we aspire to uphold Islamic
-              values and promote unity and understanding among all people. Join
-              us in fulfilling our mission of building a harmonious and
-              enlightened community.
+              {Our_Mission.map((iteme) => (
+                <p key={iteme.id}>{iteme.content}</p>
+              ))}
             </p>
           </div>
         </div>
