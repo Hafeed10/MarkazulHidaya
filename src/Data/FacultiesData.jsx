@@ -5,7 +5,7 @@ export const Leadershipdata = [
     id: "1",
     img: img32,
     name: "KP Muhammed Musliyar",
-    position: "Rector , Markazul Hidaya",
+    position: "General Secretary , Markazul Hidaya",
     buttonTo: "#",
     about:
       "Markazul Hidayathil Islamiyya, established in the year 1996, is a unique centre of education .",
@@ -23,7 +23,7 @@ export const Leadershipdata = [
     id: "3",
     // img: img32,
     name: "KK Usthad Kombam",
-    position: "Rector , Markazul Hidaya",
+    position: "General Secretary , Markazul Hidaya",
     buttonTo: "#",
     about:
       "Markazul Hidayathil Islamiyya, established in the year 1996, is a unique centre of education.",

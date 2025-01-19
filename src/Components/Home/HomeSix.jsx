@@ -26,7 +26,7 @@ function HomeSix() {
       <div className="z-10 flex flex-col-reverse items-center justify-center w-full h-full md:flex-row md:justify-end">
         <img
           src={DirectorImg}
-           className="w-full md:w-auto object-cover h-fit md:h-80 rounded-xl lg:rounded-xl"
+          className="w-full md:w-auto object-cover h-fit md:h-80 rounded-xl lg:rounded-xl"
           alt="Director"
         />
         <div className="flex flex-col items-start w-full h-full gap-4 md:gap-7 text-start pl-10">
@@ -40,7 +40,7 @@ function HomeSix() {
               KP. Muhammed Muslyar
             </h2>
             <h1 className="text-sm font-normal md:text-base lg:text-lg">
-              Rector, Markazul Hidaya
+              General Secretary  Markazul Hidaya
             </h1>
           </div>
         </div>

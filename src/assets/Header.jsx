@@ -1,14 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
-
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { CgClose, CgMenuRightAlt } from "react-icons/cg";
 import logo from "../assets/Img/Life/hidaya1.png";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [fix, setFix] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
+  const dropdownRef = useRef(null);
+
   const navigations = [
     { option: "Home", path: "/" },
     { option: "About Us", path: "/AboutUs" },
@@ -20,7 +23,6 @@ function Header() {
     { option: "Donation", path: "/Donation" },
   ];
 
-  // !const navis = [{ option: "Donation", path: "/Donation" }];
   const Navfix = () => {
     if (window.scrollY >= 50) {
       setFix(true);
@@ -30,6 +32,23 @@ function Header() {
   };
 
   window.addEventListener("scroll", Navfix);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div
@@ -60,15 +79,34 @@ function Header() {
               className={`font-medium text-sm xl:text-base ${location.pathname === "/" ? "text-[#fff]" : "text-[#555555]"
                 } hover:text-[#CCA65D] font-sans tracking-wider uppercase transition-all duration-200 ease-in cursor-pointer`}
             >
-              <Link
-                to={navigation.path}
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}
-                className={`cursor-pointer ${fix && "text-[#555555]"}`}
-              >
-                {navigation.option}
-              </Link>
+              {navigation.option === "Gallery" ? (
+               <div className="relative" ref={dropdownRef}>
+               <div onClick={toggleDropdown} className="flex items-center cursor-pointer">
+                 Gallery
+                 <RiArrowDropDownLine size={30} />
+               </div>
+               {isDropdownOpen && (
+                 <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-40 z-10">
+                   <li className="px-4 py-2 hover:bg-gray-200">
+                     <Link to="/gallery/photos" onClick={() => setIsDropdownOpen(false)}>New Photos</Link>
+                   </li>
+                   <li className="px-4 py-2 hover:bg-gray-200">
+                     <Link to="/gallery/videos" onClick={() => setIsDropdownOpen(false)}>Old Photos</Link>
+                   </li>
+                 </ul>
+               )}
+             </div>
+              ) : (
+                <Link
+                  to={navigation.path}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                  className={`cursor-pointer ${fix && "text-[#555555]"}`}
+                >
+                  {navigation.option}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -111,7 +149,7 @@ function Header() {
             <li
               onClick={() => setNavOpen(false)}
               key={index}
-              className="font-semibold text-sm md:text-base hover:text-[#605e5e79] text-[#000000bb] tracking-wider text-start uppercase transition-all duration-200 ease-in cursor-pointer"
+              className="font-semibold font-sans text-sm md:text-base hover:text-[#605e5e79] text-[#000000bb] tracking-wider text-start uppercase transition-all duration-200 ease-in cursor-pointer"
             >
               <Link
                 to={navigation.path}
