@@ -38,10 +38,7 @@ const Footer = () => {
             />
           </Tolink>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab
-            sequi iusto! Numquam, saepe ipsam iste mollitia odit exercitationem
-            molestiae labore voluptates culpa unde placeat quisquam. Doloribus
-            laboriosam sequi corporis.
+            Markazul Hidaya travelling on the right way to forge potential products by conducting effective trainings and developmenta bootcamps
           </p>
         </div>
         <div className="py-5">
@@ -96,7 +93,7 @@ const Footer = () => {
       <hr className="my-5" />
       <div className="flex flex-col items-center md:flex-row md:justify-between">
         <h1 className="text-base font-sans font-thin text-center md:text-left">
-          © 2025 Markazul Hidaya All Rights Reserved Privacy Policy
+          © {new Date().getFullYear()} Markazul Hidaya All Rights Reserved Privacy Policy
         </h1>
         <div className="flex space-x-8 text-xl items-center mt-5 md:mt-0">
           <a href="#">
