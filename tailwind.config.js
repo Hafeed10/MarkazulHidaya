@@ -12,8 +12,12 @@ export default {
       lg: '976px',
       xl: '1440px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1e7594', // Example primary color (blue)
+        main: '#133755',    // Example main color (purple)
+      },
+    },
   },
   plugins: [],
 }
-

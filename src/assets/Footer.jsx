@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-
-import logo from "../assets/Img/Life/hidaya1.png";
+import logo from "../assets/WhatsApp_Image_2025-02-08_at_14.13.37_5a852b1d-removebg-preview.png";
 import { Link } from "react-scroll";
 import { Link as Tolink } from "react-router-dom";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { FiMapPin } from "react-icons/fi";
 import {
   CgFacebook,
   CgInstagram,
@@ -11,7 +12,7 @@ import {
   CgPhone,
   CgTwitter,
 } from "react-icons/cg";
-import { FiMapPin } from "react-icons/fi";
+
 
 const Footer = () => {
   const navigations = [
@@ -24,7 +25,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#2C2C2C] text-white px-3 md:px-10 lg:px-10 xl:px-36 py-7 md:py-16">
+    <footer className="bg-[#112f47] text-white px-3 md:px-10 lg:px-10 xl:px-36 py-7 md:py-16">
       <div className="grid gap-5 md:gap-10 lg:gap-32 opacity-90 font-sans items-end md:grid-cols-3">
         <div className="space-y-5 py-5">
           <Tolink to="/">
@@ -32,7 +33,7 @@ const Footer = () => {
               onClick={() => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
               }}
-              className="cursor-pointer w-80"
+               className="w-[140px] h-auto object-contain"
               src={logo}
               alt=""
             />
@@ -49,6 +50,7 @@ const Footer = () => {
                 className="font-normal text-sm md:text-base hover:text-[#eee] text-[#fff] tracking-wider text-start uppercase transition-all duration-200 ease-in cursor-pointer"
               >
                 <Link
+                className="flex items-center gap-4"
                   activeClass="active"
                   to={navigation.path}
                   spy={true}
@@ -56,6 +58,7 @@ const Footer = () => {
                   offset={-150}
                   duration={500}
                 >
+                  <FaRegArrowAltCircleRight/>
                   {navigation.option}
                 </Link>
               </li>

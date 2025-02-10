@@ -19,6 +19,6 @@ export const Our_Mission = [
   {
     id: 1,
     content:
-      "  At Markazul Hidaya, our mission is to provide comprehensive Islamic education and spiritual guidance rooted in authentic teachings. We aim to nurture individuals to become knowledgeable, ethical, and compassionate leaders who contribute positively to society. Through educational programs, community outreach, and fostering a culture of excellence, we aspire to uphold Islamic values and promote unity and understanding among all people. Join us in fulfilling our mission of building a harmonious and enlightened community.",
+      "  At Markazul Hidaya, our mission is to provide comprehensive Islamic education and spiritual guidance rooted in authentic teachings. We aim to nurture individuals to become knowledgeable, ethical, and compassionate leaders who contribute positively to society. Through educational programs, community outreach, and fostering a culture of excellence, we aspire to uphold.",
   },
 ];

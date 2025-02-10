@@ -4,16 +4,16 @@ import { FiMail, FiMapPin, FiPhoneCall } from "react-icons/fi";
 
 function Contact() {
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full px-3 py-7 md:py-16 lg:py-22 gap-10 lg:gap-16  xl:gap-20 md:px-10 lg:px-10 xl:px-36">
-      <div className="w-full h-full bg-[#619A46] opacity-5 absolute top-0 left-0"></div>
-      <h2 className="text-[#619A46]  text-4xl md:text-5xl lg:text-[3.5rem]">
+    <div className="relative flex flex-col items-center  justify-center w-full h-full px-3 py-7 md:py-16 lg:py-22 gap-10 lg:gap-16  xl:gap-20 md:px-10 lg:px-10 xl:px-36">
+      <div className="w-full h-full bg-[#619A46] opacity-5 absolute top-0 left-0 "></div>
+      <h2 className="  text-4xl md:text-5xl lg:text-[3.5rem] text-[#133755] py-28">
         Contact us
       </h2>
       <div className="font-sans grid gird-cols-1 w-full h-full grid-rows-auto  md:grid-cols-2 items-center gap-10 lg:gap-16 py-5 lg:py-10">
         <div className="flex  w-full h-full flex-col items-start justify-start gap-y-5">
           <p className="text-lg md:text-xl ">Call Me</p>
           <div className="flex items-start w-full h-auto gap-2 md:gap-5 lg:mt-10">
-            <div className="bg-[#ffb134] rounded-xl p-2 text-xl md:text-xl">
+            <div className="bg-[#1e7594] text-white rounded-xl p-2 text-xl md:text-xl">
               <FiPhoneCall />
             </div>
             <div className="tracking-wide flex flex-col items-start w-full text-lg md:text-xl font-normal">
@@ -22,7 +22,7 @@ function Contact() {
             </div>
           </div>
           <div className="tracking-wide flex items-start w-full h-auto gap-2 md:gap-5">
-            <div className="bg-[#ffb134] rounded-xl p-2 text-xl  md:text-xl">
+            <div className="bg-[#1e7594] text-white rounded-xl p-2 text-xl  md:text-xl">
               <FiMail />
             </div>
             <p className=" text-lg md:text-xl font-normal">
@@ -30,7 +30,7 @@ function Contact() {
             </p>
           </div>
           <div className="tracking-wide flex items-start w-full h-auto gap-2 md:gap-5">
-            <div className="bg-[#ffb134] rounded-xl p-2 text-xl  md:text-xl">
+            <div className="bg-[#1e7594] text-white rounded-xl p-2 text-xl  md:text-xl">
               <FiMapPin />
             </div>
             <div className="flex flex-col items-start w-full text-lg md:text-xl font-normal">

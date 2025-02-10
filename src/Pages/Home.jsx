@@ -1,132 +1,77 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-
-import hafe from "../assets/Img/hafe.jpg";
+import bg from "../assets/bg.jpg";
 import HomeOne from "../Components/Home/HomeOne";
 import HomeTwo from "../Components/Home/HomeTwo";
 import HomeThree from "../Components/Home/HomeThree";
 import HomeFour from "../Components/Home/HomeFour";
-
-import HomeFive from "../Components/Home/HomeFive";
 import HomeSix from "../Components/Home/HomeSix";
-import HomeSeven from "../Components/Home/HomeSeven";
 import HomeEight from "../Components/Home/HomeEight";
 
 function Home() {
-  const [activeTab, setActiveTab] = useState("Certificate");
+  const [activeTab, setActiveTab] = useState("1");
 
   const handleTabSelect = (tabKey) => {
     setActiveTab(tabKey);
   };
 
-  const Tabs = [
-    {
-      tabKey: "1",
-    },
-    {
-      tabKey: "2",
-    },
-    {
-      tabKey: "3",
-    },
-    {
-      tabKey: "4",
-    },
-    {
-      tabKey: "5",
-    },
-    {
-      tabKey: "6",
-    },
-  ];
+  const Tabs = ["1", "2", "3", "4"];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const currentIndex = Tabs.findIndex((tab) => tab.tabKey === activeTab);
+      const currentIndex = Tabs.indexOf(activeTab);
       const nextIndex = (currentIndex + 1) % Tabs.length;
-      setActiveTab(Tabs[nextIndex].tabKey);
+      setActiveTab(Tabs[nextIndex]);
     }, 2500);
 
     return () => clearInterval(timer);
-  }, [activeTab, Tabs]);
+  }, [activeTab]);
 
   return (
     <div className="w-full h-full">
-      <div
-        id="Home"
-        style={{ backgroundImage: `url(${hafe})` }}
-        className="relative flex flex-col items-center justify-end w-full h-screen px-3 py-16 space-y-5 bg-top bg-no-repeat md:px-10 lg:px-10 xl:px-36 lg:py-20 xl:py-24"
-      >
-        <div className="flex flex-col items-center justify-center w-full h-auto space-y-5 text-center md:text-start md:items-start">
-          <div className="w-full h-auto">
-            <ul
-              className="flex items-center justify-start w-full space-x-3 md:space-x-4"
-              role="tablist"
-            >
-              {Tabs.map((tab) => (
-                <li
-                  key={tab.tabKey}
-                  className=""
-                  onClick={() => handleTabSelect(tab.tabKey)}
-                  role="tab"
-                >
-                  {activeTab && (
-                    <div
-                      className={`cursor-pointer transition-all shadow-lg duration-500 rounded-full opacity-10 ${activeTab === tab.tabKey
-                          ? "bg-[#619A46] w-7 h-3 "
-                          : "bg-white  w-3 h-3"
-                        }`}
-                    ></div>
-                  )}
-                </li>
-              ))}
-            </ul>
+      <div id="Home" className="relative w-full h-screen">
+        <div
+          className="absolute inset-0 bg-cover bg-center z-[-1]"
+          style={{ backgroundImage: `url(${bg})` }}
+        ></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4 text-center">
+          <div className="text-4xl md:text-6xl font-semibold text-white transition-all duration-500">
+            {activeTab === "1" && "Empowering Minds, Enriching Souls"}
+            {activeTab === "2" && "Guided by Faith, Strengthened by Knowledge"}
+            {activeTab === "3" && "Shaping Tomorrow with Islamic Values"}
+            {activeTab === "4" && "Where Tradition Meets Modern Education"}
           </div>
-          <div
-            className="w-full h-full text-5xl font-normal  md:w-2/3 lg:w-1/2 md:text-3xl lg:text-7xl"
-            id={activeTab}
-          >
-            {activeTab === "1" && (
-              <h2 className="text-white text-6xl">MARKAZUL HIDAYA.</h2>
-            )}
-            {activeTab === "2" && (
-              <h2 className="text-white text-6xl"> HIDAYA ZAHRATUL QURAN.</h2>
-            )}
-            {activeTab === "3" && (
-              // eslint-disable-next-line react/no-unescaped-entities
-              <h2 className="text-white text-6xl">HADIYA WOMEN'S ACADEMY.</h2>
-            )}
-            {activeTab === "4" && (
-              <h2 className="text-white text-6xl">
-                {" "}
-                MOULANA ENGLISH MEDIUM SCHOOL.
-              </h2>
-            )}
-            {activeTab === "5" && (
-              <h2 className="text-white text-6xl">
-                HIDAYA HIFZQURHAN COLLAGE.
-              </h2>
-            )}
-            {activeTab === "6" && (
-              <h2 className="text-white text-6xl">HIDAYA NISA GARDEN.</h2>
-            )}{" "}
+          <ul className="flex space-x-4 mb-10">
+            {Tabs.map((tab) => (
+              <li key={tab} onClick={() => handleTabSelect(tab)} role="tab">
+                <div
+                  className={`cursor-pointer rounded-full transition-all duration-500 shadow-lg"
+                  }`}
+                ></div>
+              </li>
+            ))}
+          </ul>
+          <div className="flex gap-4 md:flex-row flex-col">
+            <div className="bg-[#1e7594] hover:bg-[#1e7494cc] text-white font-sans p-3 px-14 rounded-md">
+              <h1>Learn More</h1>
+            </div>
+            <div className="bg-[#ededed49] hover:bg-[#fcfcfcf0] text-white hover:text-black font-sans p-3 px-14 rounded-md border-2 outline-none transition-all duration-200">
+              <h1>Know Us</h1>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Sections */}
       <HomeOne />
-      <HomeTwo />
       <HomeThree />
+      <HomeTwo />
       <HomeFour />
-      <HomeFive />
       <HomeSix />
-      <HomeSeven />
       <HomeEight />
     </div>
   );
 }
 
 export default Home;
-{
-  /* <h2 className="text-white text-6xl">Nisa Garden</h2>; */
-}
-//

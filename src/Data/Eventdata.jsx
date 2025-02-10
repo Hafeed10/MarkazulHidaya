@@ -1,6 +1,5 @@
 import images1 from "../assets/Img/img2.jpg";
 import images2 from "../assets/Img/111.webp";
-import images3 from "../assets/Img/silver.jpg";
 import images7 from "../assets/Img/100.jpg";
 
 export const EventData = [
@@ -24,7 +23,6 @@ export const EventData = [
     buttonTo: "#",
   },
   {
-    img: images3,
     title: "Silver Jubili Program",
     time: "23",
     date: "30 June 2023 ",

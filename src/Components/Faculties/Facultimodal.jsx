@@ -21,7 +21,7 @@ function Facultimodal({ onClose, closePath, item }) {
             </div>
             <div className='flex flex-col items-start w-full h-full md:col-span-3 space-y-3'>
               <div className='-space-y-1 '>
-                <h2 className='text-base font-normal text-[#ffb134] select-none md:text-xl lg:text-2xl'>{item.name}</h2>
+                <h2 className='text-base font-normal text-[#133755] select-none md:text-xl lg:text-2xl'>{item.name}</h2>
                 <h1 className='font-sans text-sm font-normal select-none opacity-90 md:text-lg '>{item.position}</h1>
               </div>
               <p className='font-sans text-xs sm:text-base lg:text-lg'>{item.about}</p>

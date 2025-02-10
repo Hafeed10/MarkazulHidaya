@@ -4,9 +4,9 @@ import AboutImg from "../assets/Img/Faculties/images (1).jpeg"; // Update the pa
 
 function OldGallery() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full  py-32">
       <div className="flex flex-col items-center justify-center h-full space-y-7 lg:space-y-12 bg-white py-12 md:py-16 lg:py-22 w-full">
-        <h2 className="text-[#619A46] text-4xl md:text-5xl lg:text-[3.5rem]">
+        <h2 className="text-[#133755] text-4xl md:text-5xl lg:text-[3.5rem]">
           GALLERY
         </h2>
         <img

@@ -13,7 +13,7 @@ function HomeEight() {
       className="relative w-full h-full px-3 py-10 space-y-10 text-center bg-no-repeat md:px-10 lg:px-10 xl:px-36 md:py-16 lg:py-20 xl:py-24"
     >
       <div className="w-full h-full bg-[#619A46]  opacity-5 absolute top-0 left-0 "></div>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+      <h2 className="text-3xl text-[#133755] md:text-4xl lg:text-5xl xl:text-6xl">
         Departments
       </h2>
       <p className="font-sans text-base md:text-lg lg:text-xl">
@@ -61,14 +61,16 @@ function HomeEight() {
               className="object-cover w-full h-48 rounded-lg"
               alt=""
             />
-            <div className="flex flex-col items-center justify-center w-full p-3 space-y-4 text-center h-1/2">
-              <h2 className="text-[#ffb134] text-2xl leading-7">{dep.title}</h2>
+            <div className="flex flex-col items-center justify-center  w-full p-3 space-y-4 text-center h-1/2">
+              <h2 className="text-[#133755] text-2xl leading-7">{dep.title}</h2>
+              <div className="bg-[#1e7594] text-white rounded-lg flex items-center">
               <a
                 href={dep.buttonTo}
-                className="rounded-md lg:rounded-lg cursor-pointer w-auto bg-[#555555] text-[#555555] bg-opacity-10 pt-0.5 px-4 xl:px-6 pb-1 text-xs xl:text-sm font-sans"
+                className="rounded-md lg:rounded-lg cursor-pointer w-auto bg-opacity-10 pt-0.5 px-4 xl:px-6 pb-1 text-xs xl:text-sm font-sans"
               >
                 Learn More
               </a>
+              </div>
             </div>
           </SwiperSlide>
         ))}
